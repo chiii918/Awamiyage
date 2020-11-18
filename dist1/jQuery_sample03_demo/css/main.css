@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding: 30px;
+}
+#photoFrame {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+}
+.imageArea {
+    position: absolute;
+    width: 3000px;
+    height: 600px;
+    white-space: nowrap;
+}
+#imageArea0 {
+    left: -3000px;
+}
+#imageArea1 {
+    left: 0px;
+}
+img {
+    width: 600px;
+    height: 600px;
+}
