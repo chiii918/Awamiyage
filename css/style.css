@@ -1,0 +1,267 @@
+@charset "utf-8";
+
+/* ----- 全体css ----- */
+html{
+  width: 100vw;
+  background: url(./背景.png);
+  font-family: "Garamond Premier Pro", "HannariMincho", serif;
+  font-size: 62.5%;  /* rem指定用の基準（10px）ブラウザのデフォルトを考慮して%指定 */
+  letter-spacing: .2rem;
+  /* line-height: 1.5; */
+}
+/* 800px以下は特別記述がないところは全て1/2のサイズに自動変更 */
+@media screen and (min-width:1000px){
+  html{
+    font-size: 80%;
+  }
+}
+body{
+  font-size: 1.3rem;
+}
+
+.all__container{
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  margin: 0 auto;
+}
+.main__container{
+  width: 100%;
+}
+@media screen and (min-width:1000px){
+  /* 1440px以上はコンテンツ両端を伸縮 */
+  /* 1440px以下はコンテンツそのもののwidthが変わる */
+  .all__container{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    /* background-color: #B32026; */
+  }
+  .main__container{
+    width: calc(100% - 300px);
+  }
+}
+
+/* ----- コンポーネント ----- */
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn{
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+/* ----- サイドバー ----- */
+.sidebar__container{
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  /* background-color: #0b346e; */
+}
+@media screen and (min-width:1000px){
+  .sidebar__container{
+    display: block;
+    position: relative;
+    width: 300px;
+    height: auto;
+    background-color: #0b346e;
+  }
+  .sidebar__contents{
+    position: sticky;
+    width: 300px;
+    top: 3rem;
+    margin: 3rem auto;
+    color: #ffffff;
+    text-align: center;
+    /* border: #B32026 1px solid; */
+  }
+  .sidebar__logo,
+  .nav__contents{
+    margin-bottom: 2rem;
+  }
+  .sidebar__title{
+    margin-bottom: 1rem;
+  }
+  .sidebar__btn{
+    width: 85%;
+    margin: 0 auto;
+  }
+  .sidebar__btn:nth-of-type(1){
+    margin-bottom: 1rem;
+    background-color: #B32026;
+  }
+  .sidebar__btn:nth-of-type(2){
+    margin-bottom: 1rem;
+    background-color: #ffffff;
+    color: #B32026;
+  }
+  .sidebar__btn:nth-of-type(3){
+    background-color: #ffffff;
+    color: #B32026;
+  }
+}
+
+
+
+
+
+
+/* ----- 各セクションの全体設定 ----- */
+.section__container{
+  width: 90%;
+  margin: 3rem auto 0;
+  /* border: #0b346e 2px dotted; */
+}
+.section__title{
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  /* background-color: aqua; */
+}
+.keyvisual__container,
+.news__container,
+.area__container{
+  position: relative;
+  margin: 0 auto 5rem;
+  /* border: 3px solid #000; */
+}
+
+
+/* ----- キービジュアル ----- */
+.keyvisual__img{
+  width: 100%;
+}
+.keyvisual__wrap{
+  position: absolute;
+  left: 3%;
+  bottom: 5%;
+}
+.keyvisual__txt{
+  padding: 1rem .3rem 1rem 0;   /* フォントの関係で微妙に左右の配置が違って見えるところの修正 */
+  margin-right: 10%;
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(12px);
+  font-size: 2rem;
+  text-align: center;
+  color: #ffffff;
+  line-height: 1.5;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+}
+.keyvisual__txt:last-child{
+  margin: 0;
+}
+
+
+/* ----- おしらせ ----- */
+.news__list{
+  width: 90%;
+  margin: 0 auto .5rem;
+  border-bottom: 1px solid #0b346e;
+}
+.news__list:last-of-type{
+  margin-bottom: 0;
+}
+.news__contents{
+  display: block;
+  padding: .5rem;
+}
+
+
+/* ----- エリア ----- */
+.area__contents{
+  position: relative;
+  width: 70%;
+  max-width: 600px;
+  margin: 0 auto;
+  /* background-color: aqua; */
+}
+/* img全体設定（4枚全て） */
+.area__img{
+  width: 100%;
+}
+/* タイトル全体設定 */
+.area__title{
+  display: inline;
+  position: absolute;
+  padding: 20px;
+  font-size: 3rem;
+}
+/* 県西 */
+.area__wrap--west{
+  position: absolute;
+  width: 54%;
+  top: 9%;
+  left: 1%;
+}
+.area__title--west{
+  background-color: red;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* 県北 */
+.area__wrap--north{
+  position: absolute;
+  width: 50%;
+  top: 1%;
+  right: 1%;
+}
+.area__title--north{
+  background-color: orange;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+/* 県南 */
+.area__wrap--south{
+  position: absolute;
+  width: 62%;
+  bottom: 2%;
+  right: 2%;
+}
+.area__title--south{
+  background-color: aqua;
+  top: 20%;
+  right: 50%;
+  transform: translate(50%, 0);
+}
+/* hoverエフェクト */
+.area__wrap--west:hover,
+.area__wrap--north:hover,
+.area__wrap--south:hover{
+  opacity: .7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----  ----- */
+
+
+
+@media screen and (min-width:800px){
+
+}
