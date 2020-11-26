@@ -1,12 +1,11 @@
 // ハンバーガー
 $(function () {
-  $('.humburger__container').on('click', function() {
-      $('.humburger__container').toggle('open');
+  $('.humburger__container').on('click', function () {
+    // サイドバー表示/非表示
+    $('.sidebar__container').toggleClass('show');
+    // ハンバーガーメニューopen/close
+    $('.humburger__container').toggleClass('open');
+    // メニューが開いている間は後ろを動かなくする
+    $('body,html').toggleClass('scroll');
   });
 });
-// const icons = document.querySelectorAll('.icon');
-// icons.forEach (icon => {  
-//   icon.addEventListener('click', (event) => {
-//     icon.classList.toggle("open");
-//   });
-// });
