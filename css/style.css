@@ -3,16 +3,22 @@
 /* ----- 全体css ----- */
 html{
   width: 100vw;
-  background: url(./背景.png);
+  background: url(../img/背景.png);
   font-family: "Garamond Premier Pro", "HannariMincho", serif;
   font-size: 62.5%;  /* rem指定用の基準（10px）ブラウザのデフォルトを考慮して%指定 */
   letter-spacing: .2rem;
+  color: #0F2350;
   /* line-height: 1.5; */
 }
-/* 800px以下は特別記述がないところは全て1/2のサイズに自動変更 */
-@media screen and (min-width:1000px){
+/* 特別記述がないところは下記のサイズに自動変更 */
+@media screen and (min-width:500px){
   html{
     font-size: 80%;
+  }
+}
+@media screen and (min-width:1000px){
+  html{
+    font-size: 90%;
   }
 }
 body{
@@ -45,17 +51,36 @@ body{
 }
 
 /* ----- コンポーネント ----- */
+/* フレックス設定 */
 .flex{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+/* ボタン設定 */
 .btn{
   display: block;
   width: 100%;
   padding: 1rem;
   border-radius: 10px;
   text-align: center;
+}
+/* 各セクションタイトル設定（サイト紹介以外） */
+.title__container{
+  margin-bottom: 2rem;
+}
+.title__txt{
+  flex-shrink: 0;
+  padding: .5rem 1rem 0;
+  font-size: 2rem;
+  text-align: center;
+  /* background-color: aqua; */
+}
+.title__border{
+  width: 40%;
+  height: 5px;
+  border-top: 1px solid #0F2350;
+  border-bottom: 1px solid #0F2350;
 }
 
 
@@ -68,7 +93,7 @@ body{
   z-index: 1;
   width: 100%;
   height: 100vh;
-  /* background-color: #0b346e; */
+  /* background-color: #0F2350; */
 }
 @media screen and (min-width:1000px){
   .sidebar__container{
@@ -76,14 +101,14 @@ body{
     position: relative;
     width: 300px;
     height: auto;
-    background-color: #0b346e;
+    background-color: #0F2350;
   }
   .sidebar__contents{
     position: sticky;
     width: 300px;
     top: 3rem;
     margin: 3rem auto;
-    color: #ffffff;
+    color: #FFFFFB;
     text-align: center;
     /* border: #B32026 1px solid; */
   }
@@ -104,11 +129,11 @@ body{
   }
   .sidebar__btn:nth-of-type(2){
     margin-bottom: 1rem;
-    background-color: #ffffff;
+    background-color: #FFFFFB;
     color: #B32026;
   }
   .sidebar__btn:nth-of-type(3){
-    background-color: #ffffff;
+    background-color: #FFFFFB;
     color: #B32026;
   }
 }
@@ -122,55 +147,178 @@ body{
 .section__container{
   width: 90%;
   margin: 3rem auto 0;
-  /* border: #0b346e 2px dotted; */
-}
-.section__title{
-  font-size: 4rem;
-  text-align: center;
-  margin-bottom: 1rem;
-  /* background-color: aqua; */
+  /* border: #0F2350 2px dotted; */
 }
 .keyvisual__container,
+.introduction__container,
 .news__container,
-.area__container{
+.recommend__container,
+.area__container,
+.ranking__container,
+.tasting__container,
+.instagram__container{
   position: relative;
   margin: 0 auto 5rem;
   /* border: 3px solid #000; */
 }
 
 
+
+
+/* ----- ヘッダー ----- */
+#header{
+  background-color: #0F23;
+}
+.header__logo{
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1rem;
+  background-color: aqua;
+}
+.header__img{
+  width: 40%;
+}
+/* humburger__part */
+.humburger__container{
+  width: 4rem;
+  height: 4rem;
+  margin-right: 5%;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  background-color: blueviolet;
+}
+.humburger__part{
+  background-color: #0F2350;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+  transition-duration: 500ms
+}
+.humburger__part:nth-child(1){
+  top: 0px;
+}
+.humburger__part:nth-child(2){
+  top: 1.8rem;
+  opacity: 1;
+}
+.humburger__part:nth-child(3){
+  bottom:0px;
+}
+.humburger__part:not(.open):hover span:nth-child(1){
+  transform: rotate(-3deg) scaleY(1.1);
+}
+.humburger__part:not(.open):hover span:nth-child(2){
+  transform: rotate(3deg) scaleY(1.1);
+}
+.humburger__part:not(.open):hover span:nth-child(3){
+  transform: rotate(-4deg) scaleY(1.1);
+}
+.humburger__part.open span:nth-child(1){
+  transform: rotate(45deg);
+  top: 13px;
+}
+.humburger__part.open span:nth-child(2){
+  opacity:0;
+}
+.humburger__part.open span:nth-child(3){
+  transform: rotate(-45deg);
+  top: 13px;
+}
+
+
+
+
+
+
+#footer{
+  background-color: #0F23;
+}
+
+
+
 /* ----- キービジュアル ----- */
 .keyvisual__img{
   width: 100%;
+  border-radius: 30px;
 }
 .keyvisual__wrap{
-  position: absolute;
-  left: 3%;
-  bottom: 5%;
+  display: none;
 }
-.keyvisual__txt{
-  padding: 1rem .3rem 1rem 0;   /* フォントの関係で微妙に左右の配置が違って見えるところの修正 */
-  margin-right: 10%;
-  -webkit-backdrop-filter: blur(24px);
-  backdrop-filter: blur(12px);
-  font-size: 2rem;
+@media screen and (min-width:800px){
+  .keyvisual__wrap{
+    display: flex;
+    position: absolute;
+    left: 3%;
+    bottom: 5%;
+  }
+  .keyvisual__txt{
+    padding: 1rem .3rem 1rem 0;   /* フォントの関係で微妙に左右の配置が違って見えるところの修正 */
+    margin-right: 10%;
+    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(12px);
+    font-size: 2rem;
+    text-align: center;
+    color: #FFFFFB;
+    line-height: 1.5;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+  }
+  .keyvisual__txt:last-child{
+    margin: 0;
+  }
+}
+
+
+/* ----- サイト紹介 ----- */
+.introduction__container{
   text-align: center;
-  color: #ffffff;
-  line-height: 1.5;
-  -webkit-writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
+  border: 2px dashed #0F2350;
 }
-.keyvisual__txt:last-child{
-  margin: 0;
+.introduction__title{
+  display: inline-block;
+  position: relative;
+  padding: .6rem 1.5rem 0;
+  transform: translate(0, -50%);
+  background-color: #0F2350;
+  font-size: 2rem;
+  color: #FFFFFB;
+
+}
+.introduction__title::before,
+.introduction__title::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.introduction__title::before{
+  left: -1rem;
+  border-width: 1rem 1rem 1rem 0;
+  border-color: transparent #0F2350 transparent transparent;
+}
+.introduction__title::after{
+  right: -1rem;
+  border-width: 1rem 0 1rem 1rem;
+  border-color: transparent transparent transparent #0F2350;
+}
+.introduction__txt{
+  padding: 1rem 2rem 2rem;
+  text-align: left;
 }
 
-
-/* ----- おしらせ ----- */
+/* ----- お得情報 ----- */
 .news__list{
-  width: 90%;
+  width: 100%;
   margin: 0 auto .5rem;
-  border-bottom: 1px solid #0b346e;
+  border-bottom: 1px dashed #0F2350;
 }
 .news__list:last-of-type{
   margin-bottom: 0;
@@ -179,12 +327,37 @@ body{
   display: block;
   padding: .5rem;
 }
+.news__category{
+  display: none;
+}
+@media screen and (min-width:1000px){
+  .news__list{
+    width: 90%;
+  }
+  .news__category{
+    display: inline;
+  }
+}
 
 
-/* ----- エリア ----- */
+/* ----- おすすめ ----- */
+.recommend__container{
+  text-align: center;
+}
+.recommend__img{
+  width: 60%;
+  height: 30%;
+}
+.recommend__link:first-of-type{
+  display: block;
+  margin-bottom: 1rem;
+}
+
+
+/* ----- エリアで探す ----- */
 .area__contents{
   position: relative;
-  width: 70%;
+  width: 90%;
   max-width: 600px;
   margin: 0 auto;
   /* background-color: aqua; */
@@ -193,6 +366,12 @@ body{
 .area__img{
   width: 100%;
 }
+@media screen and (min-width:1000px){
+  .area__contents{
+    width: 70%;
+  }
+}
+
 /* タイトル全体設定 */
 .area__title{
   display: inline;
@@ -247,15 +426,84 @@ body{
 }
 
 
+/* ----- ランキング ----- */
+.ranking__contents{
+  flex-wrap: wrap;
+}
+.ranking__link{
+  display: block;
+  flex-shrink: 0;
+  position: relative;
+  width: 48%;
+  border-radius: 20px;
+  overflow: hidden;
+  /* box-shadow: 3px 3px rgba(1, 1, 37, 0.2); */
+  border: 2px solid #0F2350;
+}
+.ranking__link:first-of-type{
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.ranking__link:nth-of-type(2),
+.ranking__link:nth-of-type(3){
+  margin-bottom: 1.5rem;
+}
+.ranking__link:before{
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.ranking__img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  object-fit: cover;
+}
+.ranking__number,
+.ranking__name{
+  position: absolute;
+  left: 1.2rem;
+  z-index: 1;
+  width: 4rem;
+  border-radius: 10px;
+  font-size: 2rem;
+}
+.ranking__number{
+  top: 1.2rem;
+  height: 4rem;
+  background-color: #FFFFFB;
+  border: 2px solid #0F2350;
+  color: #0F2350;
+  text-align: center;
+  line-height: 4.2rem;
+}
+.ranking__name{
+  top: 6rem;
+  height: 75%;
+  padding: 1rem 0;
+  background-color: #0F2350;
+  color: #FFFFFB;
+  line-height: 2.2;
+  overflow: hidden;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+}
 
 
 
+/* ----- 試食レポート ----- */
 
 
+/* ----- インスタグラム ----- */
 
 
-
-
+/* ----- バナー ----- */
 
 
 /* -----  ----- */

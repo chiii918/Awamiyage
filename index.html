@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./destyle.css">
+  <link rel="stylesheet" href="./css/destyle.css">
 
   <!-- ローカルcss -->
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <title>あわみやげ</title>
 </head>
 <body>
@@ -15,17 +15,17 @@
     <nav class="sidebar__container">
       <div class="sidebar__contents">
         <div class="sidebar__logo">
-          <h1 class="sidebar__title"><img src="./logo.png" alt="logo" class="sidebar__img"></h1>
+          <h1 class="sidebar__title"><img src="./img/logo.png" alt="logo" class="sidebar__img"></h1>
           <p>徳島のええもん、<br>ようけあるでよ〜</p> 
         </div>
 
         <div class="nav__contents">
-          <a href=""><img src="./nav.png" alt="nav" class="sidebar__img"></a>
-          <a href=""><img src="./nav.png" alt="nav" class="sidebar__img"></a>
-          <a href=""><img src="./nav.png" alt="nav" class="sidebar__img"></a>
-          <a href=""><img src="./nav.png" alt="nav" class="sidebar__img"></a>
-          <a href=""><img src="./nav.png" alt="nav" class="sidebar__img"></a>
-          <a href=""><img src="./nav.png" alt="nav" class="sidebar__img"></a>
+          <a href=""><img src=".img/nav.png" alt="nav" class="sidebar__img"></a>
+          <a href=""><img src="./img/nav.png" alt="nav" class="sidebar__img"></a>
+          <a href=""><img src="./img/nav.png" alt="nav" class="sidebar__img"></a>
+          <a href=""><img src="./img/nav.png" alt="nav" class="sidebar__img"></a>
+          <a href=""><img src="./img/nav.png" alt="nav" class="sidebar__img"></a>
+          <a href=""><img src="./img/nav.png" alt="nav" class="sidebar__img"></a>
         </div>
         <a href="" class="btn sidebar__btn">いんすたぐらむ</a>
         <a href="" class="btn sidebar__btn">おといあわせ</a>
@@ -35,51 +35,144 @@
 
     <!-- メインコンテンツ -->
     <main class="main__container">
-      <div class="section__container">
+      <!-- ヘッダー -->
+      <header id="header" class="flex">
+        <div class="header__logo flex">
+          <img src="./img/logo_blue.png" alt="logo" class="header__img">
+          <p class="header__txt">徳島のええもん、<br>ようけあるでよ〜</p>
+        </div>
+        
+        <div class="humburger__container">
+          <span class="humburger__part"></span>
+          <span class="humburger__part"></span>
+          <span class="humburger__part"></span>
+        </div>
+      </header>
 
+      <div class="section__container">
         <!-- キービジュアル -->
         <div class="keyvisual__container">
-          <img src="./キービジュアル.png" alt="キービジュアル" class="keyvisual__img">
-          <div class="keyvisual__wrap flex">
+          <img src="./img/keyvisual.jpg" alt="キービジュアル" class="keyvisual__img">
+          <div class="keyvisual__wrap">
             <p class="keyvisual__txt">サイト紹介文サイト紹介文サイト</p>
             <p class="keyvisual__txt">サイト紹介文サイト紹介文サイト</p>
             <p class="keyvisual__txt">サイト紹介文サイト紹介文サイト</p>
           </div>
         </div>
 
-        <!-- お知らせ -->
+        <!-- サイト紹介 -->
+        <section class="introduction__container">
+          <h2 class="introduction__title">あわみやげとは</h2>
+          <p class="introduction__txt">
+            あわみやげは徳島のお土産の情報を発信しているサイトです。<br>
+            徳島の魅力的なお土産を紹介しています。
+          </p>
+        </section>
+
+        <!-- お得情報 -->
         <section class="news__container">
-          <h2 class="section__title">おしらせ</h2>
+          <div class="title__container flex">
+            <div class="title__border"></div>
+            <img src="./img/title.png" alt="タイトル飾り">
+            <h2 class="title__txt">お得情報</h2>
+            <img src="./img/title.png" alt="タイトル飾り">
+            <div class="title__border"></div>
+          </div>
           <ul>
-            <li class="news__list"><a href="" class="news__contents">2020/11/22　　おしらせ　　　　あわみやげがオープンしました！</a></li>
-            <li class="news__list"><a href="" class="news__contents">2020/11/22　　おしらせ　　　　あわみやげがオープンしました！</a></li>
-            <li class="news__list"><a href="" class="news__contents">2020/11/22　　おしらせ　　　　あわみやげがオープンしました！</a></li>
-            <li class="news__list"><a href="" class="news__contents">2020/11/22　　おしらせ　　　　あわみやげがオープンしました！</a></li>
-            <li class="news__list"><a href="" class="news__contents">2020/11/22　　おしらせ　　　　あわみやげがオープンしました！</a></li>
+            <li class="news__list"><a href="" class="news__contents">2020/11/22　<span class="news__category">おしらせ</span>　あわみやげがオープンしました！</a></li>
+            <li class="news__list"><a href="" class="news__contents">2020/11/22　<span class="news__category">おしらせ</span>　あわみやげがオープンしました！</a></li>
+            <li class="news__list"><a href="" class="news__contents">2020/11/22　<span class="news__category">おしらせ</span>　あわみやげがオープンしました！</a></li>
+            <li class="news__list"><a href="" class="news__contents">2020/11/22　<span class="news__category">おしらせ</span>　あわみやげがオープンしました！</a></li>
+            <li class="news__list"><a href="" class="news__contents">2020/11/22　<span class="news__category">おしらせ</span>　あわみやげがオープンしました！</a></li>
           </ul>
+        </section>
+
+        <!-- おすすめ -->
+        <section class="recommend__container">
+          <div class="title__container flex">
+            <img src="./img/title.png" alt="タイトル飾り">
+            <div class="title__border"></div>
+            <h2 class="title__txt">おすすめ</h2>
+            <div class="title__border"></div>
+            <img src="./img/title.png" alt="タイトル飾り">
+          </div>
+
+          <a href="" class="recommend__link"><img src="./img/recomend_01.png" alt="徳島の名産品" class="recommend__img"></a>
+          <a href="" class="recommend__link"><img src="./img/recomend_02.png" alt="おすすめ" class="recommend__img"></a>
         </section>
         
         <!-- エリア -->
         <section class="area__container">
-          <h2 class="section__title">エリア</h2>
+          <h2 class="section__title">エリアで探す</h2>
           <div class="area__contents">
-            <img src="./tokushima.png" alt="徳島県" class="area__img">
+            <img src="./img/tokushima.png" alt="徳島県" class="area__img">
             <a href="" class="area__wrap--west">
-              <img src="./west.png" alt="県西" class="area__img">
+              <img src="./img/west.png" alt="県西" class="area__img">
               <p class="area__title area__title--west">県西</p>
             </a>
             <a href="" class="area__wrap--north">
-              <img src="./north.png" alt="県北" class="area__img">
+              <img src="./img/north.png" alt="県北" class="area__img">
               <p class="area__title area__title--north">県北</p>
             </a>
             <a href="" class="area__wrap--south">
-              <img src="./south.png" alt="県南" class="area__img">
+              <img src="./img/south.png" alt="県南" class="area__img">
               <p class="area__title area__title--south">県南</p>
             </a>
           </div>
         </section>
 
+        <!-- ランキング -->
+        <section class="ranking__container">
+          <h2 class="section__title">ランキング</h2>
+          <div class="ranking__contents flex">
+            <a href="" class="ranking__link">
+              <p class="ranking__number">1</p>
+              <p class="ranking__name">あたりやの大判焼</p>
+              <img src="./img/ranking_01.jpg" alt="ランキング1位" class="ranking__img">
+            </a>
+            <a href="" class="ranking__link">
+              <p class="ranking__number">2</p>
+              <img src="./img/ranking_02.jpg" alt="ランキング2位" class="ranking__img">
+            </a>
+            <a href="" class="ranking__link">
+              <p class="ranking__number">3</p>
+              <img src="./img/ranking_03.jpg" alt="ランキング3位" class="ranking__img">
+            </a>
+            <a href="" class="ranking__link">
+              <p class="ranking__number">4</p>
+              <img src="./img/ranking_04.jpg" alt="ランキング4位" class="ranking__img">
+            </a>
+            <a href="" class="ranking__link">
+              <p class="ranking__number">5</p>
+              <img src="./img/ranking_05.jpg" alt="ランキング5位" class="ranking__img">
+            </a>
+          </div>
+        </section>
+
+        <!-- 試食レポート -->
+        <section class="tasting__container">
+          <h2 class="section__title">試食レポート</h2>
+          <a href="">もっとみる</a>
+        </section>
+
+        <!-- インスタグラム -->
+        <section class="instagram__container">
+          <h2 class="section__title">インスタグラム</h2>
+          <a href="">Instagram</a>
+        </section>
+
+        <!-- バナー -->
+        <section class="banner__container">
+          <img src="./img/recomend_01.png" alt="徳島の名産品" class="banner__img">
+          <img src="./img/recomend_02.png" alt="おすすめ" class="banner__img">
+        </section>
+
       </div>
+
+      <!-- フッター -->
+      <footer id="footer">
+        <p>enishi inc.</p>
+      </footer>
     </main>
   </div>
   
@@ -88,6 +181,6 @@
   <!-- slick -->
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <!-- js本体 -->
-  <script type="text/javascript" src="/javascripts/script.js"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>
