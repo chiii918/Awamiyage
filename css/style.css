@@ -547,8 +547,17 @@ body{
 }
 
 /* ----- インスタグラム ----- */
-
-
+.instagram__btn{
+  background-color: #FFFAFA;
+  border: 1px solid #000;
+}
+.instagram__txt{
+  color: #A81F22;
+  margin-bottom: 1rem;
+}
+.instagram__txt--big{
+  font-size: 2rem;
+}
 /* ----- バナー ----- */
 
 
