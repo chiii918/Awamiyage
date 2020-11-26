@@ -67,7 +67,9 @@ body{
 }
 /* 各セクションタイトル設定（サイト紹介以外） */
 .title__container{
-  margin-bottom: 2rem;
+  width: 80%;
+  margin: 0 auto 2rem;
+  /* margin-bottom: 2rem; */
 }
 .title__txt{
   flex-shrink: 0;
@@ -472,6 +474,7 @@ body{
   width: 4rem;
   border-radius: 10px;
   font-size: 2rem;
+  font-weight: 900;
 }
 .ranking__number{
   top: 1.2rem;
