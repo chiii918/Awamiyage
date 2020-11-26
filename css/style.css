@@ -3,7 +3,7 @@
 /* ----- 全体css ----- */
 html{
   width: 100vw;
-  background: url(../img/背景.png);
+  background: url(../img/background_01.png);
   font-family: "Garamond Premier Pro", "HannariMincho", serif;
   font-size: 62.5%;  /* rem指定用の基準（10px）ブラウザのデフォルトを考慮して%指定 */
   letter-spacing: .2rem;
@@ -373,7 +373,6 @@ body{
     width: 70%;
   }
 }
-
 /* タイトル全体設定 */
 .area__title{
   display: inline;
@@ -394,14 +393,14 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* 県北 */
-.area__wrap--north{
+/* 県東 */
+.area__wrap--east{
   position: absolute;
   width: 50%;
   top: 1%;
   right: 1%;
 }
-.area__title--north{
+.area__title--east{
   background-color: orange;
   top: 50%;
   right: 50%;
