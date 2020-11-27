@@ -174,7 +174,12 @@ body{
   margin: 0 auto 6rem;
   /* border: 3px solid #000; */
 }
-
+/* サイドバーがあるとき、2カラムになるところ */
+@media screen and (min-width:1000px){
+  .flex__container{
+    display: flex;
+  }
+}
 
 
 
@@ -474,29 +479,31 @@ body{
   margin: auto;
   object-fit: cover;
 }
+/* 写真内のテキスト位置は決め打ち */
+/* ウィンドウサイズ大きくなったら小さくしたいため */
 .ranking__number,
 .ranking__name{
   position: absolute;
-  left: 1.2rem;
+  left: 12px;
   z-index: 1;
-  width: 4rem;
+  width: 40px;
   border-radius: 10px;
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: 900;
 }
 .ranking__number{
-  top: 1.2rem;
-  height: 4rem;
+  top: 12px;
+  height: 40px;
+  padding: 9px 0 9px 3px;
   background-color: #FFFFFB;
   border: 2px solid #0F2350;
   color: #0F2350;
   text-align: center;
-  line-height: 4.2rem;
 }
 .ranking__name{
-  top: 6rem;
+  top: 60px;
   height: 75%;
-  padding: 1rem 0;
+  padding: 10px 0;
   background-color: #0F2350;
   color: #FFFFFB;
   line-height: 2.2;
@@ -505,7 +512,15 @@ body{
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
 }
-
+@media screen and (min-width:1000px){
+  .ranking__container{
+    width: 50%;
+  }
+  .ranking__contents{
+    width: 70%;
+    margin: 0 auto;
+  }
+}
 
 
 /* ----- 試食レポート ----- */
@@ -553,7 +568,21 @@ body{
   background-color: #0F2350;
   color: #FFFFFB;
 }
-
+@media screen and (min-width:1000px){
+  .report__container{
+    width: 50%;
+  }
+  .report__contents{
+    width: 75%;
+    margin: 0 auto 3rem;
+  }
+  .report__wrap{
+    width: 65%;
+  }
+  .report__img--cover{
+    width: 30%;
+  }
+}
 /* ----- インスタグラム ----- */
 .instagram__contents{
   flex-wrap: wrap;
@@ -590,9 +619,23 @@ body{
 .banner__container{
   text-align: center;
 }
-.banner__link:first-of-type{
+.banner__img{
+  width: 60%;
+}
+.banner__link:first-of-type,
+.banner__link:nth-last-of-type(2){
   display: block;
   margin-bottom: 2rem;
+}
+@media screen and (min-width:1000px){
+  .banner__img{
+    width: 30%;
+  }
+  .banner__link:first-of-type,
+  .banner__link:nth-last-of-type(2){
+    display: inline;
+    margin-bottom: 0;
+  }
 }
 
 
