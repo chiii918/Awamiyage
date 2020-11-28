@@ -31,9 +31,6 @@ body{
   width: 100%;
   margin: 0 auto;
 }
-.main__container{
-  width: 100%;
-}
 @media screen and (min-width:1000px){
   /* 1440px以上はコンテンツ両端を伸縮 */
   /* 1440px以下はコンテンツそのもののwidthが変わる */
@@ -43,13 +40,10 @@ body{
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    /* background-color: #B32026; */
-  }
-  .main__container{
-    width: calc(100% - 300px);
-    margin-right: 300px;
   }
 }
+
+
 
 /* ----- コンポーネント ----- */
 /* フレックス設定 */
@@ -98,7 +92,7 @@ body{
   background-color: #0F2350;
 }
 .sidebar__contents{
-  width: 80%;
+  width: 90%;
   margin: 3rem auto;
   color: #FFFFFB;
   text-align: center;
@@ -142,8 +136,10 @@ body{
 @media screen and (min-width:1000px){
   .sidebar__container{
     display: block;
+    position: relative;
     width: 300px;
-    height: 100vh;
+    height: auto;
+    overflow: visible;
   }
   .sidebar__contents{
     position: sticky;
@@ -153,6 +149,21 @@ body{
 }
 
 
+
+
+
+
+
+
+/* ----- メインコンテンツの全体設定 ----- */
+.main__container{
+  width: 100%;
+}
+@media screen and (min-width:1000px){
+  .main__container{
+    width: calc(100% - 300px);
+  }
+}
 
 
 
@@ -375,13 +386,26 @@ body{
 }
 .recommend__img{
   width: 60%;
-  height: 30%;
 }
 .recommend__link:first-of-type{
   display: block;
   margin-bottom: 2rem;
 }
-
+@media screen and (min-width:1000px){
+  .recommend__wrap{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: 0 auto;
+    /* background-color: aqua; */
+  }
+  .recommend__img{
+    width: 100%;
+  }
+  .recommend__link:first-of-type{
+    margin-bottom: 0;
+  }
+}
 
 /* ----- エリアで探す ----- */
 .area__contents{
