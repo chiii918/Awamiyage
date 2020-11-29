@@ -4,7 +4,7 @@
 html{
   width: 100vw;
   background: url(../img/background_01.png);
-  font-family: "HannariMincho", serif;
+  font-family: "游明朝", serif;
   font-size: 62.5%;  /* rem指定用の基準（10px）ブラウザのデフォルトを考慮して%指定 */
   letter-spacing: .2rem;
   color: #0F2350;
@@ -64,6 +64,7 @@ body{
 .title__container{
   width: 100%;
   margin: 0 auto 2rem;
+  font-family: "HannariMincho", serif;
 }
 .title__txt{
   flex-shrink: 0;
@@ -97,6 +98,7 @@ body{
 }
 .sidebar__img--big{
   width: 100%;
+  -webkit-backface-visibility: hidden;
 }
 .navtitle__container{
   width: 100%;
@@ -133,6 +135,7 @@ body{
 .sidebar__img{
   width: 100%;
   margin-bottom: 1rem;
+  -webkit-backface-visibility: hidden;
 }
 .sidebar__btn{
   margin: 0 auto 1rem;
@@ -289,6 +292,7 @@ body{
   margin: 0 auto 6rem;
   /* border: 3px solid #000; */
 }
+
 @media screen and (min-width:500px){
   .introduction__container,
   .news__container,
@@ -306,6 +310,11 @@ body{
   /* サイドバーがあるとき、2カラムになるところ */
   .flex__container{
     display: flex;
+    justify-content: center;
+  }
+  .ranking__container,
+  .report__container{
+    margin: 0 0 6rem;
   }
 }
 
@@ -352,8 +361,8 @@ body{
 /* ----- サイト紹介 ----- */
 .introduction__container{
   width: 100%;
-  text-align: center;
   border: 2px dashed #0F2350;
+  text-align: center;
 }
 .introduction__title{
   display: inline-block;
@@ -363,6 +372,7 @@ body{
   border-radius: 10px;
   background-color: #0F2350;
   font-size: 2rem;
+  font-family: "HannariMincho", serif;
   color: #FFFFFB;
 }
 .introduction__txt{
@@ -442,6 +452,7 @@ body{
 }
 
 .area__img--anime{
+  -webkit-backface-visibility: hidden;
   /* display: none; */
   /* position: absolute; */
   /* bottom: 0; */
@@ -453,31 +464,25 @@ body{
     z-index: 1;
   }
   .area__img--anime:nth-of-type(1){
-    top: 7%;
-    left: 12%;
-    width: 19%;
+    top: 6%;
+    left: 8%;
   }
   .area__img--anime:nth-of-type(2){
-    top: 0%;
-    right: 0%;
-    /* -webkit-backface-visibility: hidden; */
-    /* width: 14%; */
+    top: 5%;
+    right: 8%;
   }
-  /* .area__img--anime:nth-child(3){
+  .area__img--anime:nth-of-type(3){
     top: 30%;
-    right: -25%;
-    width: 25%;
-  } */
-  /* .area__img--anime:nth-child(4){
-    right: -10%;
-    bottom: 25%;
-    width: 15%;
-  } */
-  /* .area__img--anime:nth-child(5){
-    right: -5%;
+    right: 12%;
+  }
+  .area__img--anime:nth-of-type(4){
+    right: -2%;
+    bottom: 20%;
+  }
+  .area__img--anime:nth-of-type(5){
+    right: 13%;
     bottom: 0;
-    width: 30%;
-  } */
+  }
 /* } */
 
 /* エリアimg全体設定（4枚全て） */
@@ -605,7 +610,7 @@ body{
 }
 @media screen and (min-width:600px){
   .ranking__container{
-    width: 50%;
+    width: 45%;
   }
   .ranking__container .title__container{
     width: 95%;
@@ -674,7 +679,7 @@ body{
 }
 @media screen and (min-width:600px){
   .report__container{
-    width: 50%;
+    width: 45%;
   }
   .report__container .title__container{
     width: 95%;
