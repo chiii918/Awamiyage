@@ -4,7 +4,7 @@
 html{
   width: 100vw;
   background: url(../img/background_01.png);
-  font-family: "游明朝", serif;
+  font-family: "游明朝体", serif;
   font-size: 62.5%;  /* rem指定用の基準（10px）ブラウザのデフォルトを考慮して%指定 */
   letter-spacing: .2rem;
   color: #0F2350;
@@ -18,7 +18,7 @@ html{
 }
 @media screen and (min-width:1000px){
   html{
-    font-size: 90%;
+    font-size: 80%;
   }
 }
 /* 文書の基本サイズ SPで13px */
@@ -106,9 +106,10 @@ body{
 }
 .navtitle__txt{
   flex-shrink: 0;
-  padding: 0 1rem;
+  padding: 0 1rem .6rem;
   font-size: 1.4rem;
   text-align: center;
+  font-family: "HannariMincho", serif;
 }
 .navtitle__border{
   width: 40%;
@@ -249,7 +250,7 @@ body{
 .humburger__container.open .humburger__part:nth-child(1){
   /* 上記のtranslateがrotateで打ち消されてしまうため再度記載 */
   transform: rotate(45deg) translateX(-70%);
-  top: 75%;
+  top: 76%;
   background-color: #0F2350;
 }
 .humburger__container.open .humburger__part:nth-child(2){
@@ -257,7 +258,7 @@ body{
 }
 .humburger__container.open .humburger__part:nth-child(3){
   transform: rotate(-45deg) translateX(-70%);
-  top: 24%;
+  top: 25%;
   background-color: #0F2350;
 }
 @media screen and (min-width:1000px){
@@ -303,7 +304,7 @@ body{
   .category__container,
   .instagram__container,
   .banner__container{
-    width: 90%;
+    width: 96%;
   }
 }
 @media screen and (min-width:600px){
@@ -327,6 +328,40 @@ body{
 .keyvisual__wrap{
   display: none;
 }
+.keyvisual__contents{
+  position: relative;
+  width: 100%;
+  height: 100vw;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.keyvisual__contents:before{
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.keyvisual__img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  object-fit: cover;
+}
+@media screen and (min-width:500px){
+  .keyvisual__contents{
+    height: auto;
+  }
+  .keyvisual__contents:before{
+    padding-top: 0;
+  }
+  .keyvisual__img{
+    position: relative;
+  }
+}
 /* キービジュアルのテキスト */
 @media screen and (min-width:800px){
   .keyvisual__wrap{
@@ -336,7 +371,6 @@ body{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-
   }
   .keyvisual__txt{
     padding: 1rem .3rem 1rem 0;   /* フォントの関係で微妙に左右の配置が違って見えるところの修正 */
@@ -379,9 +413,9 @@ body{
   padding: 1rem 2rem 2rem;
   text-align: left;
 }
-@media screen and (min-width:500px){
+@media screen and (min-width:1000px){
   .introduction__container{
-    width: 90%;
+    width: 70%;
     text-align: center;
     border: 2px dashed #0F2350;
   }
@@ -603,6 +637,7 @@ body{
   background-color: #0F2350;
   color: #FFFFFB;
   line-height: 2;
+  letter-spacing: .4rem;
   overflow: hidden;
   -webkit-writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
@@ -610,7 +645,7 @@ body{
 }
 @media screen and (min-width:600px){
   .ranking__container{
-    width: 45%;
+    width: 48%;
   }
   .ranking__container .title__container{
     width: 95%;
@@ -621,16 +656,7 @@ body{
     margin: 0 5% 2rem 0;
   }
 }
-@media screen and (min-width:1000px){
-  .ranking__container .title__container{
-    width: 90%;
-    margin: 0 auto 2rem;
-  }
-  .ranking__contents{
-    width: 90%;
-    margin: 0 auto;
-  }
-}
+
 
 /* ----- 試食レポート ----- */
 .report__contents{
@@ -679,7 +705,7 @@ body{
 }
 @media screen and (min-width:600px){
   .report__container{
-    width: 45%;
+    width: 48%;
   }
   .report__container .title__container{
     width: 95%;
@@ -699,16 +725,7 @@ body{
     margin: 0 0 0 60%;
   }
 }
-@media screen and (min-width:1000px){
-  .report__container .title__container{
-    width: 90%;
-    margin: 0 auto 2rem;
-  }
-  .report__contents{
-    width: 90%;
-    margin: 0 auto 2rem;
-  }
-}
+
 
 
 /* ----- カテゴリ ----- */
