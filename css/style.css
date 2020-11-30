@@ -249,16 +249,16 @@ body{
 }
 .humburger__container.open .humburger__part:nth-child(1){
   /* 上記のtranslateがrotateで打ち消されてしまうため再度記載 */
-  transform: rotate(45deg) translateX(-70%);
-  top: 76%;
+  transform: rotate(45deg) translateX(-73%);
+  top: 75%;
   background-color: #0F2350;
 }
 .humburger__container.open .humburger__part:nth-child(2){
   opacity:0;
 }
 .humburger__container.open .humburger__part:nth-child(3){
-  transform: rotate(-45deg) translateX(-70%);
-  top: 25%;
+  transform: rotate(-45deg) translateX(-73%);
+  top: 20%;
   background-color: #0F2350;
 }
 @media screen and (min-width:1000px){
@@ -290,10 +290,12 @@ body{
 .banner__container{
   position: relative;
   width: 100%;
-  margin: 0 auto 6rem;
+  margin: 0 auto 8rem;
   /* border: 3px solid #000; */
 }
-
+.keyvisual__container{
+  margin: 0 auto 10rem;
+}
 @media screen and (min-width:500px){
   .introduction__container,
   .news__container,
@@ -398,6 +400,12 @@ body{
   border: 2px dashed #0F2350;
   text-align: center;
 }
+.introduction__img{
+  position: absolute;
+  top: -33%;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .introduction__title{
   display: inline-block;
   position: relative;
@@ -469,9 +477,6 @@ body{
 
 
 /* ----- エリアで探す ----- */
-.area__container{
-  /* background-color: aquamarine; */
-}
 .area__contents{
   position: relative;
   width: 100%;
@@ -479,46 +484,46 @@ body{
   margin: 0 auto;
   /* background-color: aqua; */
 }
-@media screen and (min-width:500px){
+.area__img--anime{
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  z-index: 1;
+}
+.area__img--anime:nth-of-type(1){
+  top: 15%;
+  left: 8%;
+  width: 20%;
+}
+.area__img--anime:nth-of-type(2){
+  top: 7%;
+  right: 0%;
+  width: 15%;
+}
+.area__img--anime:nth-of-type(3){
+  top: 30%;
+  right: 0;
+  width: 10%;
+}
+.area__img--anime:nth-of-type(4){
+  right: 13%;
+  bottom: 0;
+  width: 20%;
+}
+@media screen and (min-width:600px){
   .area__contents{
     width: 70%;
   }
-}
-
-.area__img--anime{
-  -webkit-backface-visibility: hidden;
-  /* display: none; */
-  /* position: absolute; */
-  /* bottom: 0; */
-}
-/* @media screen and (min-width:1000px){ */
-  .area__img--anime{
-    /* display: block; */
-    position: absolute;
-    z-index: 1;
-  }
   .area__img--anime:nth-of-type(1){
-    top: 6%;
-    left: 8%;
+    top: 8%;
   }
   .area__img--anime:nth-of-type(2){
     top: 5%;
     right: 8%;
   }
   .area__img--anime:nth-of-type(3){
-    top: 30%;
     right: 12%;
   }
-  .area__img--anime:nth-of-type(4){
-    right: -2%;
-    bottom: 20%;
-  }
-  .area__img--anime:nth-of-type(5){
-    right: 13%;
-    bottom: 0;
-  }
-/* } */
-
+}
 /* エリアimg全体設定（4枚全て） */
 .area__img{
   width: 100%;
@@ -527,7 +532,7 @@ body{
 .area__title{
   display: inline;
   position: absolute;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 /* 県西 */
 .area__wrap--west{
