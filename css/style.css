@@ -3,7 +3,7 @@
 /* ----- 全体css ----- */
 html{
   width: 100vw;
-  background: url(../img/background_01.png);
+  background: url(../img/background01.png);
   font-family: "游明朝体", serif;
   font-size: 62.5%;  /* rem指定用の基準（10px）ブラウザのデフォルトを考慮して%指定 */
   letter-spacing: .2rem;
@@ -63,7 +63,7 @@ body{
 /* 各セクションタイトル設定（サイト紹介以外） */
 .title__container{
   width: 100%;
-  margin: 0 auto 2rem;
+  margin: 0 auto 4rem;
   font-family: "HannariMincho", serif;
 }
 .title__txt{
@@ -94,7 +94,7 @@ body{
   background-color: #0F2350;
 }
 .sidebar__logo{
-  margin-bottom: 3rem;
+  margin-bottom: 0.5rem;
 }
 .sidebar__img--big{
   width: 100%;
@@ -143,8 +143,8 @@ body{
   background-color: #FFFFFB;
   color: #A81F22;
 }
-.sidebar__btn:last-of-type{
-  margin-bottom: 2rem;
+.sidebar__btn:nth-of-type(2){
+  margin: 0 auto 2rem;
 }
 .nav__link{
   display: block;
@@ -196,9 +196,37 @@ body{
 .main__container{
   width: 100%;
 }
+@media screen and (min-width:600px){
+  .main__container{
+    background-image:
+            url(../img/background02.png),
+            url(../img/background03.png),
+            url(../img/background03.png);
+    background-repeat:
+            no-repeat,
+            no-repeat,
+            no-repeat;
+    background-position:
+            right 5% bottom 18%,
+            left -30% bottom 5%,
+            right -70% bottom 15%;
+  }
+}
+@media screen and (min-width:800px){
+  .main__container{
+    background-position:
+            right 5% bottom 16%,
+            left -30% bottom 5%,
+            right -45% bottom 15%;
+  }
+}
 @media screen and (min-width:1000px){
   .main__container{
     width: calc(100% - 270px);
+    background-position:
+            right 5% bottom 15%,
+            left -15% bottom 5%,
+            right -28% bottom 15%;
   }
 }
 
@@ -250,7 +278,7 @@ body{
 .humburger__container.open .humburger__part:nth-child(1){
   /* 上記のtranslateがrotateで打ち消されてしまうため再度記載 */
   transform: rotate(45deg) translateX(-73%);
-  top: 75%;
+  top: 73%;
   background-color: #0F2350;
 }
 .humburger__container.open .humburger__part:nth-child(2){
@@ -260,6 +288,19 @@ body{
   transform: rotate(-45deg) translateX(-73%);
   top: 20%;
   background-color: #0F2350;
+}
+@media screen and (min-width:500px){
+  .humburger__container.open .humburger__part:nth-child(1){
+    /* 上記のtranslateがrotateで打ち消されてしまうため再度記載 */
+    transform: rotate(45deg) translateX(-73.5%);
+    top: 75%;
+    background-color: #0F2350;
+  }
+  .humburger__container.open .humburger__part:nth-child(3){
+    transform: rotate(-45deg) translateX(-73.5%);
+    top: 20%;
+    background-color: #0F2350;
+  }
 }
 @media screen and (min-width:1000px){
   #header{
@@ -400,9 +441,12 @@ body{
   border: 2px dashed #0F2350;
   text-align: center;
 }
+.introduction__wrap{
+  position: relative;
+}
 .introduction__img{
   position: absolute;
-  top: -33%;
+  top: -90%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -431,6 +475,9 @@ body{
 
 
 /* ----- お得情報 ----- */
+.news__container .title__container{
+  justify-content: center;
+}
 .news__list{
   width: 100%;
   margin: 0 auto .5rem;
@@ -484,44 +531,9 @@ body{
   margin: 0 auto;
   /* background-color: aqua; */
 }
-.area__img--anime{
-  -webkit-backface-visibility: hidden;
-  position: absolute;
-  z-index: 1;
-}
-.area__img--anime:nth-of-type(1){
-  top: 15%;
-  left: 8%;
-  width: 20%;
-}
-.area__img--anime:nth-of-type(2){
-  top: 7%;
-  right: 0%;
-  width: 15%;
-}
-.area__img--anime:nth-of-type(3){
-  top: 30%;
-  right: 0;
-  width: 10%;
-}
-.area__img--anime:nth-of-type(4){
-  right: 13%;
-  bottom: 0;
-  width: 20%;
-}
 @media screen and (min-width:600px){
   .area__contents{
     width: 70%;
-  }
-  .area__img--anime:nth-of-type(1){
-    top: 8%;
-  }
-  .area__img--anime:nth-of-type(2){
-    top: 5%;
-    right: 8%;
-  }
-  .area__img--anime:nth-of-type(3){
-    right: 12%;
   }
 }
 /* エリアimg全体設定（4枚全て） */
@@ -767,9 +779,7 @@ body{
     color: #FFFFFB;
   }
 }
-@media screen and (min-width:1000px){
 
-}
 
 
 /* ----- インスタグラム ----- */
@@ -814,6 +824,20 @@ body{
   width: 15%;
   max-width: 40px;
 }
+.title__container--SP{
+  display: flex;
+}
+.title__container--PC{
+  display: none;
+}
+@media screen and (min-width:500px){
+  .title__container--SP{
+    display: none;
+  }
+  .title__container--PC{
+    display: flex;
+  }
+}
 @media screen and (min-width:600px){
   .instagram__contents{
     flex-wrap: nowrap;
@@ -825,6 +849,10 @@ body{
     margin-bottom: 0;
   }
 }
+
+
+
+
 
 
 /* ----- バナー ----- */
