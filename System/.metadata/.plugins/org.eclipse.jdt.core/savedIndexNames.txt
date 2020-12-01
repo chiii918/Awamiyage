@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+/Users/tuqiaoqianxun/Awamiyage/System/.metadata/.plugins/org.eclipse.jdt.core
+3406039643.index
+1017723783.index
+564439505.index
+1220020442.index
+2889929132.index
+3863080613.index
