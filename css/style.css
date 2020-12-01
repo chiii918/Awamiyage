@@ -16,11 +16,6 @@ html{
     font-size: 80%;
   }
 }
-@media screen and (min-width:1000px){
-  html{
-    font-size: 80%;
-  }
-}
 /* 文書の基本サイズ SPで13px */
 body{
   font-size: 1.3rem;
