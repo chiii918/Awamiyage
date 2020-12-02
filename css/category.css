@@ -1,1 +1,121 @@
 @charset "utf-8";
+/*ここから林 report_detail試食レポート*/
+
+/*カテゴリ*/
+.component__wrap{
+    width: 100%;
+    margin: 4rem auto 1rem;
+    
+}
+
+.component__title{
+    font-size: 2rem;
+}
+
+/*カテゴリテキスト画像*/
+.component__title--img{
+  width: 2.4rem;
+}
+
+
+/* パンくずリスト */
+
+
+.breadcrumb__txt{
+  
+    margin-bottom: 3rem;
+    padding: 0.3rem;
+    background-color: #FFFFFF;
+    font-size: 1rem; 
+
+    /* margin:0 calc(50% - 50vw);  この部分だけ横幅いっぱい*/
+}
+
+/*ここまでkeyvisual__template"*/
+
+
+/*キービジュアル*/
+.report_detail--keyvisual--img{
+  width: 100%;
+  border-radius: 30px;
+  margin-bottom: 3rem;
+}
+
+/*キービジュアルテキスト皆さん～*/
+.report_detail--keyvisual--text{
+  margin-bottom: 6rem;
+}
+
+@media screen and (min-width:500px){
+
+  /* .report_detail--keyvisual--text{
+  font-size: 4rem;
+  } */
+
+}
+
+/*目次*/
+.report_detail--chapter--wrap{
+  width: 80%;/*わからん*/
+  /* display: flex;
+  justify-content: center; */
+  border: 2px dotted #0F2350;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+/*目次の中身*/
+
+.report_detail__chapter--list li{
+  padding: 2rem;
+}
+
+.report_detail__chapter--item{
+  border-bottom: dotted 2px#0F2350;
+
+}
+
+/*h3 タイトル*/
+
+.report_detail__report--title{
+  padding: 1rem 1rem;
+  margin-bottom: 3rem;
+  border-radius: .5rem;
+  background-color: #0F2350;
+  color: #FFFFFB;
+  font-size: 1.5rem;
+}
+
+/*画像はkeyvisual__imgで統一*/
+
+.keyvisual__wrap--img{
+  margin-bottom: 2.5rem;
+}
+
+/*テキストの中身*/
+.report_detail__report--txt{
+  margin-bottom: 3rem;
+}
+
+/*まとめ*/
+.report_detail--summary{
+  flex-wrap: nowrap;
+  width: 100%;
+  margin: 0 auto 2rem;
+}
+
+/* まとめの画像 */
+
+.report_detail--summary--img{
+  width: 47%;
+  height: 200px;
+  /* margin-bottom: 1rem; */
+  background-color: #FFFFFB;
+  border-radius: 1rem;
+}
+
+/* .main__container{
+  display: none;
+} */
+
+/* ここまで林 */
