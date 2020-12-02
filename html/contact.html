@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/destyle.css">
+	<link rel="stylesheet" href="../css/category.css">
+
+	<!-- ローカルcss -->
+	<link rel="stylesheet" href="../css/style.css">
+
+	<title>あわみやげ</title>
+</head>
+
+<body>
+	<div class="all__container">
+		<!-- サイドバー -->
+		<nav class="sidebar__container">
+			<div class="sidebar__contents">
+				<h1 class="sidebar__logo"><a href=""><img src="../img/logo_sidebar.png" alt="logo"
+							class="sidebar__img--big"></a>
+				</h1>
+				<div class="nav__container">
+					<div class="nav__contents">
+						<div class="navtitle__container flex">
+							<div class="navtitle__border"></div>
+							<h2 class="navtitle__txt">お土産を探す</h2>
+							<div class="navtitle__border"></div>
+						</div>
+						<a href=""><img src="../img/gnavi01.png" alt="nav" class="sidebar__img"></a>
+						<a href=""><img src="../img/gnavi02.png" alt="nav" class="sidebar__img"></a>
+						<a href=""><img src="../img/gnavi03.png" alt="nav" class="sidebar__img"></a>
+						<a href=""><img src="../img/gnavi04.png" alt="nav" class="sidebar__img"></a>
+						<a href=""><img src="../img/gnavi05.png" alt="nav" class="sidebar__img"></a>
+						<a href=""><img src="../img/gnavi06.png" alt="nav" class="sidebar__img"></a>
+					</div>
+					<div class="navtitle__container flex">
+						<div class="navtitle__border"></div>
+						<h2 class="navtitle__txt">おすすめ</h2>
+						<div class="navtitle__border"></div>
+					</div>
+					<a href="" class="btn sidebar__btn">徳島の名産品</a>
+					<a href="" class="btn sidebar__btn">推し土産</a>
+					<a href="" class="nav__link"><img src="../img/insta_logo02.png" alt=""></a>
+					<a href="" class="nav__link">お問い合わせ</a>
+					<a href="" class="nav__link">プライバシーポリシー</a>
+				</div>
+			</div>
+
+		</nav>
+
+		<!-- メインコンテンツ -->
+		<main class="main__container">
+			<!-- ヘッダー -->
+			<header id="header">
+				<img src="../img/logo_header.png" alt="logo" class="header__img">
+				<div class="humburger__container">
+					<span class="humburger__part"></span>
+					<span class="humburger__part"></span>
+					<span class="humburger__part"></span>
+				</div>
+			</header>
+
+			<class class="section__container">
+				<!-- コンテンツ内容はここに追記する -->
+				<section class="contact__container">
+					<div class="title__container flex">
+						<h2>お問い合わせフォーム</h2>
+						<p>※お問い合わせの内容によっては、回答までにお時間をいた
+							だく場合や回答を控えさせていただく場合もございます。
+							予めご了承ください。</p>
+						<p>※必須項目は必ずご入力ください</p>
+					</div>
+					<div class="from__container">
+						<div>
+							<form action="" method="post">
+								<div>
+									<label for="name">お名前</label>
+									<input id="name" type="text" name="name" placeholder="あわみやげ">
+								</div>
+								<div>
+									<label for="mail">メールアドレス</label>
+									<input id="mail" type="email" name="mail" placeholder="awamiyage@gmail.com">
+								</div>
+								<div>
+									<label for="company__name">社名</label>
+									<input id="company__name" type="text" name="company__name" placeholder="あわみやげ">
+								</div>
+								<div>
+									<select name="type" id="">
+										<option value="claim">クレーム</option>
+										<option value="counselling">相談</option>
+										<option value="request">依頼</option>
+										<option value="comment" selected>コメント</option>
+										<option value="Other">その他</option>
+									</select>
+								</div>
+								<div>
+									<label for="title">お問い合わせ名</label>
+									<input id="title" type="text" name="title" placeholder="タイトル">
+								</div>
+								<div>
+									<label for="comment">お問い合わせ内容</label>
+									<textarea id="comment" name="comment"></textarea>
+								</div>
+								<div class="btn-area">
+									<input type="reset" value="リセット">
+									<input type="submit" value="送信">
+								</div>
+							</form>
+
+						</div>
+					</div>
+				</section>
+
+
+
+
+
+
+
+
+
+
+
+			</class>
+			<!-- フッター -->
+			<footer id="footer" class="flex">
+				<small class="footer__copyright">©️enishi</small>
+			</footer>
+		</main>
+	</div>
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<!-- js本体 -->
+	<script src="./js/script.js"></script>
+</body>
+
+</html>
