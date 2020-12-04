@@ -122,10 +122,12 @@
 .local__foods__contents__fexwap{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 .local__foods__contents{
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 /* 商品写真 */
 .local__foods__img--cover{
