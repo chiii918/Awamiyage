@@ -590,7 +590,7 @@
 
 
 
-/* ここからだに */
+/* ----------------------------------ここからだに-------------------------------------- */
 
 /* -------お問い合わせ-------- */
 .privacy__wrap {
@@ -599,9 +599,15 @@
 @media screen and (min-width: 500px) {
   .contact__wrap,
   .privacy__wrap {
-    padding: 0 12rem;
+    padding: 0 5rem;
   }
-} 
+}
+@media screen and (min-width: 1000px) {
+  .contact__wrap,
+  .privacy__wrap {
+    padding: 0 9rem;
+  }
+}
 /* ------お問い合わせタイトル------ */
 
  .contact__title,
@@ -702,4 +708,4 @@ li.privacy--point::before {
 .privacy--txt dd {
   font-size: 1.2rem;
 } 
-/* ここまでだに */
+/* ----------------------------------ここまでだに---------------------------------- */
