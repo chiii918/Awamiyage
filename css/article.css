@@ -38,7 +38,7 @@
 }
 /* パンくずリスト */
 .breadcrumb__txt{
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
     padding: 0.3rem;
     background-color: #FFFFFF;
     font-size: 1rem;
@@ -118,11 +118,16 @@
 }
 
 /*-------------------------------- 徳島の名産品ページ---- */
-
+/* ---主な名産品紹介--- */
 .local__foods__contents__fexwap{
   display: flex;
   flex-wrap: wrap;
 }
+
+.local__foods__contents{
+  margin-bottom: 2rem;
+}
+/* 商品写真 */
 .local__foods__img--cover{
   display: block;
   flex-shrink: 0;
@@ -136,7 +141,6 @@
   display: block;
   padding-top: 100%;
 }
-
 .local__food__img{
   position: absolute;
   width: 100%;
@@ -148,11 +152,23 @@
   margin: auto;
   object-fit: cover;
 }
-
+/* 商品タイトルサイズ */
+.local__foods__title{
+  font-size: 1.7rem;
+  margin:0 0 .5rem .5rem;
+}
+/* 商品紹介テキスト */
+.local__food__txt{
+  margin-left: 2rem;
+}
 @media screen and (min-width:600px){
   .local__foods__contents{
     width: 48%;
   }
+  .local__food__txt{
+  margin:0 2rem 0;
+ }
+}
 
 
 /*---------------------------------------------- 原田記述おわり */
