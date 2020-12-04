@@ -632,16 +632,16 @@
 
 /* ------フォーム------ */
 
- .from__container {
+ /* .from__container {
   display: flex;
   flex-direction: column;
-}
+} */
 .form__group {
   padding: 1.5rem 0;
 }
 .form__type.form__group {
   position: relative;
-} 
+}
 /* ----矢印---- */
 .form__type.form__group::before {
   position: absolute;
@@ -655,7 +655,7 @@
   border-right: 6px solid transparent;
   border-top: 10px solid #0f2350;
   pointer-events: none;
-} 
+}
 
  .form__control {
   width: 100%;

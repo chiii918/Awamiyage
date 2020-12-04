@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/destyle.css">
     <link rel="stylesheet" href="../css/system.css">
-    <link rel="stylesheet" href="../css/system.css">
     <title>試食レポート投稿記事</title>
 </head>
 
@@ -25,65 +24,100 @@
         <div class="reports__container">
             <form action="">
 
-                <h1>試食レポート投稿記事</h1>
+                <h1 class="reports__title">試食レポート投稿記事</h1>
 
+                <div class="reports__wrap">
+                    <div class="reports__group">
+                        <label for="article__name" class="review__title">レビュー記事名<br>
+                            <input type="text" name="reports_title" id="article__name" class="reports__control"
+                                placeholder="タイトル" required>
+                        </label>
+                    </div>
+                    <div class="reports__group">
+                        <label for="article__class" class="">記事分類<br></label>
+                        <select name="reports_type" id="article__class"
+                            class="reports__group__control reports__control vvv" required>
+                            <option value="1">レビュー（単体）</option>
+                            <option value="2">レビュー（複数）</option>
+                            <option value="3">お得情報</option>
+                        </select>
+                    </div>
+                    <div class="reports__group">
+                        <label for="review__eyecatch">写真１<br>
+                            <input type="file" name="reports_eyecatch" id="review__eyecatch" placeholder="試食商品の写真"
+                                required>
+                        </label>
+                    </div>
 
-                <div>
-                    <label for="article__name">レビュー記事名</label>
-                    <input type="text" name="reports_title" id="article__name" placeholder="タイトル" required>
-                </div>
-                <div>
-                    <label for="article__class">記事分類</label>
-                    <select name="reports_type" id="article__class" required>
-                        <option value="1">レビュー（単体）</option>
-                        <option value="2">レビュー（複数）</option>
-                        <option value="3">お得情報</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="review__content1">レビュー記事内容１</label>
-                    <input type="text" name="reports_content1" id="review__content1" placeholder="試食商品の説明文" required>
-                </div>
+                    <div class="reports__group">
+                        <label for="review__content1">試食商品の説明文<br>
+                            <textarea type="text" name="reports_content1" id="review__content1"
+                                class="review__control reports__control" placeholder="試食商品の説明文" required>
+                            </textarea>
+                        </label>
+                    </div>
 
-                <div>
-                    <label for="review__content2">買ってみた</label>
-                    <input type="text" name="reports_content2" id="review__content2" placeholder="「買ってみた」記事内容" required>
-                </div>
-                <div>
-                    <label for="review__content3">食べてた</label>
-                    <input type="text" name="reports_content3" id="review__content3" placeholder="「食べてみた」記事内容" required>
-                </div>
-                <div>
-                    <label for="review__content4">まとめ</label>
-                    <input type="text" name="reports_content4" id="review__content4" placeholder="まとめ記事" required>
-                </div>
-                <div>
-                    <label for="review__eyecatch">写真１</label>
-                    <input type="file" name="reports_eyecatch" id="review__eyecatch" placeholder="試食商品の写真" required>
-                </div>
-                <div>
-                    <label for="review__photo2">写真２</label>
-                    <input type="file" name="reports_photo2" id="review__photo2" placeholder="「買ってみた」写真" required>
-                </div>
-                <div>
-                    <label for="review__photo3">写真３</label>
-                    <input type="file" name="reports_photo3" id="review__photo3" placeholder="「食べてみた」写真" required>
-                </div>
-                <div>
-                    <label for="review__heading1">小見出し１</label>
-                    <input type="text" name="reports_heading1" id="review__heading1" placeholder="「買ってみた」小見出し" required>
-                </div>
-                <div>
-                    <label for="review__heading2">小見出し２</label>
-                    <input type="text" name="reports_heading2" id="review__heading2" placeholder="「食べてみた」小見出し" required>
-                </div>
-                <div>
-                    <label for="review__heading3">小見出し３</label>
-                    <input type="text" name="reports_heading3" id="review__heading3" placeholder="「まとめ」小見出し" required>
-                </div>
-                <div class="system__inner">
-                    <button type="submit" class="system__btn">登録</button>
-                    <button type="reset" class="system__btn">削除</button>
+                    <div class="reports__group">
+                        <label for="review__heading1">小見出し１<br>
+                            <input type="text" name="reports_heading1" id="review__heading1" class="reports__control"
+                                placeholder="「買ってみた」小見出し" required>
+                        </label>
+                    </div>
+
+                    <div class="reports__group">
+                        <label for="review__photo2">写真２<br>
+                            <input type="file" name="reports_photo2" id="review__photo2" placeholder="「買ってみた」写真"
+                                required>
+                        </label>
+                    </div>
+                    <div class="reports__group">
+                        <label for="review__content2">買ってみた<br>
+                            <textarea type="text" name="reports_content2" id="review__content2"
+                                class="review__control reports__control" placeholder="「買ってみた」記事内容" required>
+                             </textarea>
+                        </label>
+                    </div>
+
+                    <div class="reports__group">
+                        <label for="review__heading2">小見出し２<br>
+                            <input type="text" name="reports_heading2" id="review__heading2" class="reports__control"
+                                placeholder="「食べてみた」小見出し" required>
+                        </label>
+                    </div>
+
+                    <div class="reports__group">
+                        <label for="review__photo3">写真３<br>
+                            <input type="file" name="reports_photo3" id="review__photo3" placeholder="「食べてみた」写真"
+                                required>
+                        </label>
+                    </div>
+
+                    <div class="reports__group">
+                        <label for="review__content3">食べてた<br>
+                            <textarea type="text" name="reports_content3" id="review__content3"
+                                class="review__control reports__control" placeholder="「食べてみた」記事内容" required>
+                                                    </textarea>
+                        </label>
+                    </div>
+
+                    <div class="reports__group">
+                        <label for="review__heading3">小見出し３<br>
+                            <input type="text" name="reports_heading3" id="review__heading3" class="reports__control"
+                                placeholder="「まとめ」小見出し" required>
+                        </label>
+                    </div>
+                    <div class="reports__group">
+                        <label for="review__content4">まとめ<br>
+                            <textarea type="text" name="reports_content4" id="review__content4"
+                                class="review__control reports__control" placeholder="まとめ記事" required>
+                                </textarea>
+                        </label>
+                    </div>
+
+                    <div class="system__inner">
+                        <button type="submit" class="system__btn">登録</button>
+                        <button type="reset" class="system__btn" style="background-color: red;">削除</button>
+                    </div>
                 </div>
             </form>
         </div>
