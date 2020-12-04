@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/destyle.css">
+    <link rel="stylesheet" href="../css/system.css">
+    <link rel="stylesheet" href="../css/system.css">
+    <title>試食レポート投稿記事</title>
+</head>
+
+<body>
+    <div class="system__container">
+        <header class="header__container">
+            <img src="img/logo.png" alt="" class="header__logo">
+            <div class="header__link">
+                <a href="" class="header__btn">マイページへ</a>
+                <form action="">
+                    <button class="header__btn--logout">ログアウト</button>
+                </form>
+            </div>
+            <img src="img/kame.png" alt="" class="header__img">
+        </header>
+        <div class="reports__container">
+            <form action="">
+
+                <h1>試食レポート投稿記事</h1>
+
+
+                <div>
+                    <label for="article__name">レビュー記事名</label>
+                    <input type="text" name="reports_title" id="article__name" placeholder="タイトル" required>
+                </div>
+                <div>
+                    <label for="article__class">記事分類</label>
+                    <select name="reports_type" id="article__class" required>
+                        <option value="1">レビュー（単体）</option>
+                        <option value="2">レビュー（複数）</option>
+                        <option value="3">お得情報</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="review__content1">レビュー記事内容１</label>
+                    <input type="text" name="reports_content1" id="review__content1" placeholder="試食商品の説明文" required>
+                </div>
+
+                <div>
+                    <label for="review__content2">買ってみた</label>
+                    <input type="text" name="reports_content2" id="review__content2" placeholder="「買ってみた」記事内容" required>
+                </div>
+                <div>
+                    <label for="review__content3">食べてた</label>
+                    <input type="text" name="reports_content3" id="review__content3" placeholder="「食べてみた」記事内容" required>
+                </div>
+                <div>
+                    <label for="review__content4">まとめ</label>
+                    <input type="text" name="reports_content4" id="review__content4" placeholder="まとめ記事" required>
+                </div>
+                <div>
+                    <label for="review__eyecatch">写真１</label>
+                    <input type="file" name="reports_eyecatch" id="review__eyecatch" placeholder="試食商品の写真" required>
+                </div>
+                <div>
+                    <label for="review__photo2">写真２</label>
+                    <input type="file" name="reports_photo2" id="review__photo2" placeholder="「買ってみた」写真" required>
+                </div>
+                <div>
+                    <label for="review__photo3">写真３</label>
+                    <input type="file" name="reports_photo3" id="review__photo3" placeholder="「食べてみた」写真" required>
+                </div>
+                <div>
+                    <label for="review__heading1">小見出し１</label>
+                    <input type="text" name="reports_heading1" id="review__heading1" placeholder="「買ってみた」小見出し" required>
+                </div>
+                <div>
+                    <label for="review__heading2">小見出し２</label>
+                    <input type="text" name="reports_heading2" id="review__heading2" placeholder="「食べてみた」小見出し" required>
+                </div>
+                <div>
+                    <label for="review__heading3">小見出し３</label>
+                    <input type="text" name="reports_heading3" id="review__heading3" placeholder="「まとめ」小見出し" required>
+                </div>
+                <div class="system__inner">
+                    <button type="submit" class="system__btn">登録</button>
+                    <button type="reset" class="system__btn">削除</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
