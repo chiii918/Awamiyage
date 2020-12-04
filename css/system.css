@@ -455,11 +455,11 @@ margin: 0 auto;
 
 /* -----------------------------試食記事登録------------------------------------------------- */
 .reports__container{
-  width: 50%;
+  width: 60%;
   margin: 7rem auto;
 }
 .reports__wrap{
-  padding: 0 10rem;
+  padding: 10rem;
 }
 .reports__title{
   font-size: 5rem;
@@ -468,34 +468,47 @@ margin: 0 auto;
 }
 
 .reports__group{
-font-size: 2rem;
-margin-bottom: 1rem;
-}
-.reports__control{
-  width: 100%;
-}
-.reports__group__control{
-  border: #707070 1px solid;
-}
-.vvv{
-  position: relative;
-}
-.vvv::before{
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 0;
-  height: 0;
-  padding: 0;
-  content: "";
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 10px solid #0f2350;
-  pointer-events: none;
+  font-size: 2rem;
+  margin-bottom: 3rem;
 }
 textarea {
   resize: none;
   height: 20rem;
-  border: #707070 1px solid;
-  width: 50%;
+  border: #000000 1px solid;
+  width: 100%;
+}
+span{
+  color: #a81f22;
+}
+input[type="file"]{
+
+  border: none;
+  outline: none;
+}
+.reports__title{
+  position: relative;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 20px;
+}
+.reports__title::before{
+  content: "";
+  display: block;
+  width: 150px;
+  height:2px;
+  background: linear-gradient(to left, #0b346e, transparent); 
+  position: absolute;
+ top: 23px;
+ left:130px;
+ 
+}
+.reports__title::after{
+  content: "";
+  display: block;
+  width: 150px;
+  height:2px;
+  background: linear-gradient(to right, #0b346e, transparent); 
+  position: absolute;
+ top: 23px;
+ right: 130px;
 }
