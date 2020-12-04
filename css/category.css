@@ -318,7 +318,7 @@
     width: 130px;
     height: 130px;
   }
- 
+
 }
 @media (min-width: 400px) and (max-width: 556px) {
   .product__list__wrap {
@@ -450,6 +450,10 @@
 .area__container {
   margin-top: 5rem;
   margin-bottom: 1rem;
+}
+.area__contents{
+  display: flex;
+  justify-content: center;
 }
 .area__img {
   width: 85%;
@@ -628,7 +632,7 @@
 .contact--txt p::before {
   content: "※";
   margin-left: -1.5rem;
-} 
+}
 
 /* ------フォーム------ */
 
@@ -668,7 +672,7 @@
 textarea {
   resize: none;
   height: 20rem;
-} 
+}
 /* ----必須の文字---- */
 .form__group span {
   padding: 0 0.5rem;
@@ -677,7 +681,7 @@ textarea {
   font-size: 0.9rem;
   background-color: brown;
   color: #fffffb;
-} 
+}
 
 .contact__btn{
   padding-bottom: 6rem;
@@ -707,5 +711,5 @@ li.privacy--point::before {
 }
 .privacy--txt dd {
   font-size: 1.2rem;
-} 
+}
 /* ----------------------------------ここまでだに---------------------------------- */
