@@ -503,6 +503,7 @@
 .area__wrap--west{
   left: 9%;
 }
+/* 文字 */
 .area__title--west{
   left: 42%;
 }
@@ -520,6 +521,15 @@
   }
 }
 /*--------------- 県南 ----*/
+.area__wrap--south {
+  right: .9%;
+}
+/* 文字 */
+.area__title--south {
+  top: 45%;
+  right: 60%;
+  transform: translate(50%, 0);
+}
 /* ウミガメ */
 .area__img--umigame {
   position: absolute;
@@ -527,14 +537,7 @@
   bottom: 2%;
   right: 5%;
 }
-.area__wrap--south {
-  right: .9%;
-}
-.area__title--south {
-  top: 45%;
-  right: 60%;
-  transform: translate(50%, 0);
-}
+
 @media screen and (min-width: 600px) {
   .area__wrap--south {
     right: 3%;
