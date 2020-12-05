@@ -462,7 +462,7 @@
 .area__wrap--east {
   width: 41%;
   top: 1.8%;
-  right: 17.5%;
+  right: 10.5%;
 }
 /* 文字 */
 .area__title--east {
@@ -475,14 +475,14 @@
   position: absolute;
   width: 18%;
   top: -16%;
-  right: 5%;
+  right: 1%;
 }
 /* わかめ */
 .area__img--wakame {
   position: absolute;
   width: 15%;
-  top: 28%;
-  right: -1%;
+  top: 25%;
+  right: -4%;
 }
 @media screen and (min-width: 600px) {
   .area__img {
@@ -500,6 +500,12 @@
 }
 
 /*---------------- 県西 ----*/
+.area__wrap--west{
+  left: 9%;
+}
+.area__title--west{
+  left: 42%;
+}
 /* かずら橋 */
 .area__img--kazura {
   position: absolute;
@@ -521,9 +527,8 @@
   bottom: 2%;
   right: 5%;
 }
-
 .area__wrap--south {
-  right: 8.5%;
+  right: .9%;
 }
 .area__title--south {
   top: 45%;
