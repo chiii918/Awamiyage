@@ -395,8 +395,8 @@
 .area-all__container {
   padding-bottom: 5rem;
   /* margin-bottom: 20rem; */
-  background-image: url(../img/area_icon06.png), url(../img/area_icon01.png),
-    url(../img/area_icon02.png);
+  background-image: url(../img/area_icon06-2.png), url(../img/area_icon01-2.png),
+    url(../img/area_icon02-2.png);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: left 11% top 22%, right 8% bottom 45%, left 5% bottom 12%;
   background-size: 13%, 20%, 20%;
