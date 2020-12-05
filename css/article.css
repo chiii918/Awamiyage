@@ -80,7 +80,53 @@
 /*------ 下層ページ共通 -↑-----*/
 
 
+/* --------------------ここからだに---------------------- */
+.introduction__fave__container{
+  width: 100%;
+  border: 2px dashed #0F2350;
+  text-align: center;
+  position: relative;
+  margin: 8rem auto ;
+}
+.introduction__fave__container::before{
+    display: block;
+    content:"";
+    background-image: url(../img/fave_icon1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 6.5rem;
+    height: 6.5rem;
+    position: absolute;
+    top: -50px;
+    left: 20px;
+}
 
+.introduction__fave__txt{
+  padding: 3rem 2rem 2rem;
+  text-align: center;
+}
+
+@media screen and (min-width:1000px){
+  .introduction__fave__container{
+    width: 70%;
+    text-align: center;
+    border: 2px dashed #0F2350;
+  }
+}
+
+
+
+
+/* --------テキスト----------- */
+.component__txt {
+  text-align: center;
+  margin-bottom: 3.5rem;
+  line-height: 2rem;
+}
+/* --------テキスト----------- */
+
+
+/* --------------------ここまでだに---------------------- */
 
 /* ---------------------------------------------原田記述スタート */
 /* 試食レポート一覧ページ */
