@@ -6,6 +6,34 @@
   src: url("../hannari/Hannari.otf") format('opentype');
   src: url("../hannari/Hannari.woff")format('woff');
 }
+
+/* / ------------------------------------背景画像の位置調整--------------------- / */
+
+@media screen and (min-width: 600px) {
+  .main__container {
+    background-image: url(../img/background02.png), url(../img/background03.png),
+      url();
+    background-repeat: no-repeat, no-repeat;
+
+    background-position: right 5% bottom 18%, left -30% bottom 0%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .main__container {
+    background-position: right 5% bottom 16%, left -30% bottom 0%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .main__container {
+    width: calc(100% - 270px);
+    background-position: right 5% bottom 15%, left -15% bottom 0%;
+  }
+}
+
+
+
+
+
 /* キービジュアル */
 .component__wrap{
     width: 100%;
