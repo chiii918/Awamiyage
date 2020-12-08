@@ -663,7 +663,7 @@
 .before::before {
   display: block;
   content: "";
-  background-image: url("/img/title03.png");
+  background-image: url("../img/title03.png");
   background-size: contain;
   width: 32px;
   height: 32px;
