@@ -149,9 +149,12 @@
 .product__list__wrap {
   display: flex;
   flex-wrap: wrap;
-   margin: 0 auto;
   justify-content: space-around;
-  width: 100%;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.product__inner {
+  margin-top: 2rem;
 }
 .product__imgbox {
   width: 150px;
@@ -165,13 +168,13 @@
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  transition: .3s;
-  -webkit-transition: .3s;
-  -moz-transition: .3s;
-  -ms-transition: .3s;
-  -o-transition: .3s;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
-.product__img:hover{
+.product__img:hover {
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -179,37 +182,52 @@
   -o-border-radius: 50%;
   opacity: 0.8;
 }
+.product__txt--contents {
+  width: auto;
+}
 .product__txt {
-  text-align: center;
-  font-size: 1.5rem;
+  text-align: left;
+  font-size: 1rem;
   margin-top: 1rem;
-  margin-bottom: 2rem;
-  padding-right: 2rem;
+  margin-bottom: 0.5rem;
+  /* white-space: pre; */
+  width: 160px;
+}
+.product__tag {
+  font-size: 0.6rem;
+  border: #0f2350 1px solid;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 0.2rem;
+  background-color: #fff;
+  display: inline-block;
+  margin-bottom: 0.3rem;
 }
 
-@media (max-width: 350px) {
-  .product__imgbox {
-    width: 130px;
-    height: 130px;
-  }
-}
-@media (min-width: 638px) {
+@media (min-width: 500px) {
   .product__list__wrap {
-    justify-content: start;
-    padding-left: 4rem;
-   width: 600px;
-   margin: 0 auto;
+    width: 400px;
+    margin: 0 auto;
+    gap: 3rem;
   }
   .product__imgbox {
-    margin-right: 2rem;
+    width: 160px;
+    height: 160px;
+  }
+  .product__txt {
+    font-size: 0.8rem;
   }
 }
-@media (min-width: 768px) {
-
-  .product__list__wrap{
- width: 730px;
- margin: 0 auto;
- padding-left: 1rem;
+@media (min-width: 800px) {
+  .product__list__wrap {
+    width: 800px;
+    margin: 0 auto;
+  }
+  .br {
+    display: none;
   }
 }
 
