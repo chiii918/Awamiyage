@@ -181,7 +181,7 @@
   }
 }
 /* -------------------------------------------------------------------------------- */
-
+/* ---------------------input-------------- */
 .component__select__inner {
   position: relative;
 }
@@ -193,7 +193,7 @@
   background-image: url("../img/title03.png");
   background-size: contain;
   position: absolute;
-  left: 15%;
+  left: 10%;
 }
 .component__select__btn {
   padding: 1rem 0;
@@ -214,6 +214,8 @@
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
 }
 .component__select__btn:hover {
   background-color: #fff;
@@ -240,12 +242,14 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 9rem;
+  justify-content: center;
 }
 
 @media (min-width: 500px) {
   .component__select__inner::before {
     width: 40px;
     height: 40px;
+    
   }
 
   .component__select__btn {
@@ -261,26 +265,26 @@
     margin: 2em auto;
   }
   .component__select__inner::before {
-    left: 15%;
+    left: 10%;
     top: 35px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .component__select__wrap {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
   }
-  .cp_ipselect {
+  /* .cp_ipselect {
     margin: 2em 0;
     width: 140%;
   }
   .cp_ipselect.cp_sl04 select {
     padding: 8px 0px 8px 70px;
     font-size: 1.2rem;
-  }
+  } */
   .component__select__inner::before {
-    left: 1%;
+    left: 11%;
     top: 35px;
   }
   .component__select__btn {
@@ -288,11 +292,11 @@
     padding: 0.9rem 0;
   }
 }
-@media (min-width: 1000px) {
+/* @media (min-width: 1000px) {
   .cp_ipselect {
     width: 150%;
   }
-}
+} */
 
 .cp_ipselect.cp_sl05 {
   position: relative;
@@ -303,14 +307,34 @@
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
+  width: 80%;
+  margin-left: 10%;
+  
 }
 
 .cp_ipselect.cp_sl05 input {
-  padding: 8px 0;
+  padding: 8px 0 8px 80px;
   color: #0f2350;
   position: relative;
   font-size: 1.1rem;
   width: 200px;
+}
+@media(min-width:500px){
+  .cp_ipselect.cp_sl05 input{
+    width: 300px;
+    max-width: 500px;
+    padding-left: 50px;
+  }
+}
+@media(min-width:1000px){
+  .cp_ipselect.cp_sl05 input{
+    width: 400px;
+    max-width: 500px;
+    padding-left: 70px;
+  }
+  .component__select__inner::before{
+    left: 10%;
+  }
 }
 /* -----------------------------------------------サイト紹介文--------------------------- */
 .component__txt {
