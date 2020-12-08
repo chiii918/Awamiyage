@@ -95,23 +95,34 @@
           <p class="component__txt">カテゴリ説明文カテゴリ説明文カテゴリ説明文<br>
             カテゴリ説明文カテゴリ説明文カテゴリ説明文</p>
         </div>
+        <div class="component__heading__wrap">
+          <div class="component__heading">
+            <p class="component__heading--txt">品目を選んでください</p>
+          </div>
+        </div>
+        
         <form action="">
-          <div class="component__select__wrap">
-            <div class="component__select__inner">
-              <div class="cp_ipselect cp_sl04">
-                <select required>
-                  <option value="" hidden>品目を選んでください</option>
-                  <option value="1">おかず</option>
-                  <option value="2">スイーツ</option>
-                  <option value="3">お酒</option>
-                  <option value="4">野菜</option>
-
-                </select>
-              </div>
-            </div>
-            <button class="component__select__btn">検索</button>
+          <div class="radio__wrap">
+            <ul class="component__radio">
+              <li class="component__radio--list"><input type="radio" name="radio" class="radio-input" id="radio-01">
+                <label for="radio-01">酒</label></li>
+              <li class="component__radio--list"><input type="radio" name="radio" class="radio-input" id="radio-02">
+                <label for="radio-02">ソフトドリンク</label></li>
+              <li class="component__radio--list"><input type="radio" name="radio" class="radio-input" id="radio-03">
+                <label for="radio-03">農産物</label></li>
+              <li class="component__radio--list"><input type="radio" name="radio" class="radio-input" id="radio-04">
+                <label for="radio-04">海産物</label></li>
+              <li class="component__radio--list"><input type="radio" name="radio" class="radio-input" id="radio-05">
+                <label for="radio-05">お菓子</label></li>
+              <li class="component__radio--list"><input type="radio" name="radio" class="radio-input" id="radio-06">
+                <label for="radio-06">おかず</label></li>
+              <li class="component__radio--list"><input type="radio" name="radio" class="radio-input" id="radio-07">
+                <label for="radio-07">その他</label></li>
+            </ul>
           </div>
         </form>
+      
+      
         <div class="title__container flex">
           <div class="title__border"></div>
           <img src="../img/title01.png" alt="タイトル飾り">
@@ -121,62 +132,168 @@
         </div>
 
         <!-- 写真 -->
-        <ul class="product__list__wrap">
-          <a href="" class="product__list--link">
-            <li class="product__inner">
-              <div class="product__imgbox">
-                <img src="../img/3858744_s.jpg" alt="" class="product__img">
-              </div>
-              <p class="product__txt">商品名</p>
-            </li>
-          </a>
-
-          <a href="" class="product__list--link">
-            <li class="product__inner">
-              <div class="product__imgbox">
-                <img src="../img/3858744_s.jpg" alt="" class="product__img">
-              </div>
-              <p class="product__txt">商品名</p>
-            </li>
-          </a>
-
-          <a href="" class="product__list--link">
-            <li class="product__inner">
-              <div class="product__imgbox">
-                <img src="../img/3858744_s.jpg" alt="" class="product__img">
-              </div>
-              <p class="product__txt">商品名</p>
-            </li>
-          </a>
-
-          <a href="" class="product__list--link">
-            <li class="product__inner">
-              <div class="product__imgbox">
-                <img src="../img/3858744_s.jpg" alt="" class="product__img">
-              </div>
-              <p class="product__txt">商品名</p>
-            </li>
-          </a>
-
-          <a href="" class="product__list--link">
-            <li class="product__inner">
-              <div class="product__imgbox">
-                <img src="../img/3858744_s.jpg" alt="" class="product__img">
-              </div>
-              <p class="product__txt">商品名</p>
-            </li>
-          </a>
-
-          <a href="" class="product__list--link">
-            <li class="product__inner">
-              <div class="product__imgbox">
-                <img src="../img/3858744_s.jpg" alt="" class="product__img">
-              </div>
-              <p class="product__txt">商品名</p>
-            </li>
-          </a>
-
-        </ul>
+      <ul class="product__list__wrap">
+        <a href="" class="product__list--link">
+          <li class="product__inner">
+            <div class="product__imgbox">
+              <img src="../img/3858744_s.jpg" alt="" class="product__img">
+            </div>
+            <p class="product__txt">クリーミースイートポテト</p>
+          <li><span class="product__tag">しょっぱい</span></li>
+          <li><span class="product__tag">2000〜3000円</span></li>
+          </li>
+        </a>
+        <a href="" class="product__list--link">
+          <li class="product__inner">
+            <div class="product__imgbox">
+              <img src="../img/3858744_s.jpg" alt="" class="product__img">
+            </div>
+            <p class="product__txt">クリーミースイートポテト</p>
+          <li><span class="product__tag">しょっぱい</span></li>
+          <li><span class="product__tag">2000〜3000円</span></li>
+          </li>
+        </a>
+        <a href="" class="product__list--link">
+          <li class="product__inner">
+            <div class="product__imgbox">
+              <img src="../img/3858744_s.jpg" alt="" class="product__img">
+            </div>
+            <p class="product__txt">クリーミースイートポテト</p>
+          <li><span class="product__tag">しょっぱい</span></li>
+          <li><span class="product__tag">2000〜3000円</span></li>
+          </li>
+        </a>
+        <a href="" class="product__list--link">
+          <li class="product__inner">
+            <div class="product__imgbox">
+              <img src="../img/3858744_s.jpg" alt="" class="product__img">
+            </div>
+            <p class="product__txt">クリーミースイートポテト</p>
+          <li><span class="product__tag">しょっぱい</span></li>
+          <li><span class="product__tag">2000〜3000円</span></li>
+          </li>
+        </a>
+        <a href="" class="product__list--link">
+          <li class="product__inner">
+            <div class="product__imgbox">
+              <img src="../img/3858744_s.jpg" alt="" class="product__img">
+            </div>
+            <p class="product__txt">クリーミースイートポテト</p>
+          <li><span class="product__tag">しょっぱい</span></li>
+          <li><span class="product__tag">2000〜3000円</span></li>
+          </li>
+        </a>
+        <a href="" class="product__list--link">
+          <li class="product__inner">
+            <div class="product__imgbox">
+              <img src="../img/3858744_s.jpg" alt="" class="product__img">
+            </div>
+            <p class="product__txt">クリーミースイートポテト</p>
+          <li><span class="product__tag">しょっぱい</span></li>
+          <li><span class="product__tag">2000〜3000円</span></li>
+          </li>
+        </a>
+        <a href="" class="product__list--link">
+          <li class="product__inner">
+            <div class="product__imgbox">
+              <img src="../img/3858744_s.jpg" alt="" class="product__img">
+            </div>
+            <p class="product__txt">クリーミースイートポテト</p>
+          <li><span class="product__tag">しょっぱい</span></li>
+          <li><span class="product__tag">2000〜3000円</span></li>
+          </li>
+        </a>
+        <a href="" class="product__list--link">
+          <li class="product__inner">
+            <div class="product__imgbox">
+              <img src="../img/3858744_s.jpg" alt="" class="product__img">
+            </div>
+            <p class="product__txt">クリーミースイートポテト</p>
+          <li><span class="product__tag">しょっぱい</span></li>
+          <li><span class="product__tag">2000〜3000円</span></li>
+          </li>
+        </a>
+        <a href="" class="product__list--link">
+          <li class="product__inner">
+            <div class="product__imgbox">
+              <img src="../img/3858744_s.jpg" alt="" class="product__img">
+            </div>
+            <p class="product__txt">クリーミースイートポテト</p>
+          <li><span class="product__tag">しょっぱい</span></li>
+          <li><span class="product__tag">2000〜3000円</span></li>
+          </li>
+        </a>
+        <a href="" class="product__list--link">
+          <li class="product__inner">
+            <div class="product__imgbox">
+              <img src="../img/3858744_s.jpg" alt="" class="product__img">
+            </div>
+            <p class="product__txt">クリーミースイートポテト</p>
+          <li><span class="product__tag">しょっぱい</span></li>
+          <li><span class="product__tag">2000〜3000円</span></li>
+          </li>
+        </a>
+        <a href="" class="product__list--link">
+          <li class="product__inner">
+            <div class="product__imgbox">
+              <img src="../img/3858744_s.jpg" alt="" class="product__img">
+            </div>
+            <p class="product__txt">クリーミースイートポテト</p>
+          <li><span class="product__tag">しょっぱい</span></li>
+          <li><span class="product__tag">2000〜3000円</span></li>
+          </li>
+        </a>
+        <a href="" class="product__list--link">
+          <li class="product__inner">
+            <div class="product__imgbox">
+              <img src="../img/3858744_s.jpg" alt="" class="product__img">
+            </div>
+            <p class="product__txt">クリーミースイートポテト</p>
+          <li><span class="product__tag">しょっぱい</span></li>
+          <li><span class="product__tag">2000〜3000円</span></li>
+          </li>
+        </a>
+        <a href="" class="product__list--link">
+          <li class="product__inner">
+            <div class="product__imgbox">
+              <img src="../img/3858744_s.jpg" alt="" class="product__img">
+            </div>
+            <p class="product__txt">クリーミースイートポテト</p>
+          <li><span class="product__tag">しょっぱい</span></li>
+          <li><span class="product__tag">2000〜3000円</span></li>
+          </li>
+        </a>
+        <a href="" class="product__list--link">
+          <li class="product__inner">
+            <div class="product__imgbox">
+              <img src="../img/3858744_s.jpg" alt="" class="product__img">
+            </div>
+            <p class="product__txt">クリーミースイートポテト</p>
+          <li><span class="product__tag">しょっぱい</span></li>
+          <li><span class="product__tag">2000〜3000円</span></li>
+          </li>
+        </a>
+        <a href="" class="product__list--link">
+          <li class="product__inner">
+            <div class="product__imgbox">
+              <img src="../img/3858744_s.jpg" alt="" class="product__img">
+            </div>
+            <p class="product__txt">クリーミースイートポテト</p>
+          <li><span class="product__tag">しょっぱい</span></li>
+          <li><span class="product__tag">2000〜3000円</span></li>
+          </li>
+        </a>
+        <a href="" class="product__list--link">
+          <li class="product__inner">
+            <div class="product__imgbox">
+              <img src="../img/3858744_s.jpg" alt="" class="product__img">
+            </div>
+            <p class="product__txt">クリーミースイートポテト</p>
+          <li><span class="product__tag">しょっぱい</span></li>
+          <li><span class="product__tag">2000〜3000円</span></li>
+          </li>
+        </a>
+      </ul>
 
         <div class="component__btn--box">
           <a href="../index.html" class="component__btn--home">ホームに戻る</a>
