@@ -830,3 +830,32 @@ li.privacy--point::before {
   font-size: 1.2rem;
 }
 /* ----------------------------------ここまでだに---------------------------------- */
+/* news_detail.html */
+.news__detail--campaign--title{
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+   padding: 1rem 1rem;
+  margin-bottom: 3rem;
+  border-radius: .5rem;
+  background-color: #0F2350;
+  color: #FFFFFB;
+  font-size: 1.5rem;
+}
+
+/*下層キービジュアル*/
+.news__detail--keyvisual{
+  width: 60%;
+  margin: 0 auto;
+}
+.news__detail--keyvisual--img{
+  width: 100%;
+  border-radius: 30px;
+  margin-bottom: 3rem;
+}
+
+/*下層キービジュアルテキストテキスト*/
+.news__detail--keyvisual--text{
+  
+  margin-bottom: 3rem;
+}
