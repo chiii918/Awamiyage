@@ -317,14 +317,14 @@
   
   /*左の画像４枚*/
   .product_detail--keyvisual--inner{
-    width: 47%;
+    width: 50%;
   }
 
-  /*右の商品名～ユーザー評価まで*/
-  .product_detail--information{
-    width: 47%;
-    align-self: center; 
+  .product__data__contents{
+    width: 40%;
+    margin-right: 3rem;
   }
+
   
 }
 
@@ -362,31 +362,24 @@ padding-bottom: 1rem;
 .product_detail__report--txt{
   margin-bottom: 3rem;
 }
+/*入り数　味　価格　品目*/
+.product__data--list{
+  padding: 1rem;
+  border-bottom: #0F2350 1px solid;
+}
+.product__data__contents{
+  margin-bottom: 3rem;
+}
+@media(min-width:768px){
+  .product__data--list{
+  padding: 1.5rem;
+  border-bottom: #0F2350 1px solid;
+}
+}
+
+
 
 /*テーブル*/
-
-.table01{
-  width: 100%;
-  margin-bottom: 5rem;
-  border:#0F2350 solid 3px;
-  text-align: center;
-}
-
-tr,th,td {
-    border: #0F2350 solid 1px;              /* 枠線指定 */
-  }
-
-.th--left{
-  width: 38%;
-}
-
-.td--right{
-  width: 58%;
-}
-
-/*あわみやげデータ*/
-
-/*あわみやげデータのタイトル部分のみ*/
 .product_detail__report--title--table{
   padding: 1rem 1rem;
   border-radius: .5rem .5rem 0 0;
@@ -395,297 +388,40 @@ tr,th,td {
   font-size: 1.5rem;
 }
 
-.roduct_detail--flex--wrap{
-  display: flex;
-  justify-content: center;
+.table01{
   width: 100%;
   margin-bottom: 5rem;
-}
-
-/*flex左側*/
-.roduct_detail--flex-left{
-  width: 40%;
+  border:#0F2350 solid 3px;
   text-align: center;
-  font-size: 1.4rem;
+  
 }
 
-.roduct_detail--flex-left > p{
-  padding: 1rem;
-  border: 1px solid #0F2350;
-}
+tr,th,td {
+    border: #0F2350 solid 1px;           
+  }
 
-/*flex右側*/
-
-.roduct_detail--flex-right{
-  width: 60%;
-  font-size: 1.4rem;
-}
-
-.roduct_detail--flex-right > p{
-  padding: 1rem;
-  border: 1px solid #0F2350;
-}
-
-
-
-/*このお土産について評価をお願いします*/
-
-.roduct_detail--evaluation--title{
-  font-size: 1.4rem;
-  color:#0F2350;
+.th--left{
+  width: 38%;
+  vertical-align: middle;
   text-align: center;
-  margin-bottom: 3rem;
-}
-
-/*検索ボタン*/
-/* .cp_ipselect {
-  overflow: hidden;
-  width: 70%;
-  margin: 0 auto 2rem;
-  text-align: center;
-}
-.cp_ipselect select {
-  width: 100%;
-  padding-right: 1em;
-  cursor: pointer;
-  text-indent: 0.01px;
-  text-overflow: ellipsis;
-  border: none;
-  outline: none;
-  background: transparent;
-  background-image: none;
-  box-shadow: none;
-  -webkit-appearance: none;
-  appearance: none;
-}
-.cp_ipselect select::-ms-expand {
-  display: none;
-}
-.cp_ipselect.cp_sl04 {
-  position: relative;
-  border: 4px solid #0f2350;
-  border-radius: 50px;
-  background: transparent;
-}
-.cp_ipselect.cp_sl04::before {
-  position: absolute;
-  top: 1em;
-  right: 0.8em;
-  width: 0;
-  height: 0;
-  padding: 0;
-  content: "";
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 6px solid #0f2350;
-  pointer-events: none;
-}
-.cp_ipselect.cp_sl04 select {
-  padding: 8px 8px 8px 50px;
-  color: #0f2350;
-  position: relative;
-  font-size: 1.2rem;
-}
-.component__select__inner {
-  position: relative;
-}
-.component__select__inner::before {
-  display: block;
-  content: "";
-  width: 37px;
-  height: 37px;
-  background-image: url("../img/title03.png");
-  background-size: contain;
-  position: absolute;
-  left: 0;
-}
-.component__select__btn {
-  padding: 1rem 0;
-  background-color: #0f2350;
-  color: #fffffb;
-  text-align: center;
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
-  width: 140px;
-  margin: 0 auto;
-  display: block;
-  position: relative;
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-}
-.component__select__btn:hover {
   background-color: #fff;
-  color: #0f2350;
-  border: 1px solid #0f2350;
-}
-.component__select__btn::before {
-  content: "";
-  display: block;
-  width: 126px;
-  height: 28px;
-  border: 1px solid #fffffb;
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
-  position: absolute;
-  top: 4px;
-  right: 8px;
 }
 
-.component__select__wrap {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 9rem;
+.td--right{
+  width: 58%;
+  padding: 1rem;
+  background-color: #fff;
 }
 
-@media (min-width: 500px) {
-  .component__select__inner::before {
-    width: 40px;
-    height: 40px;
-  }
-  
-  .component__select__btn {
-    margin: 0 auto;
-    padding: 0.9rem 0;
-  }
-  .component__select__btn::before {
-    top: 5.5px;
-    right: 7px;
-    height: 34px;
-  }
-  .cp_ipselect {
-    margin: 2em auto;
-  }
-  .component__select__inner::before {
-    left: 0;
-    top: 35px;
-  }
-}
-
-@media (min-width: 768px) {
-  .component__select__wrap {
-  
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .cp_ipselect {
-    margin: 2em 0;
-    width: 140%;
-  }
-  .cp_ipselect.cp_sl04 select {
-    padding: 8px 0px 8px 70px;
-    font-size: 1.2rem;
-  }
-  .component__select__inner::before {
-    left: 1%;
-    top: 35px;
-  }
-  .component__select__btn {
-    margin: 0 ;
-    padding: 0.9rem 0;
-  }
-}
-
-@media (min-width: 1000px) {
-  .cp_ipselect {
-    width: 150%;
-  }
-}
-
-.cp_ipselect.cp_sl05 {
-  position: relative;
-  border: 4px solid #0f2350;
-  border-radius: 50px;
-  background: transparent;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-}
-
-.cp_ipselect.cp_sl05 input {
-  padding: 8px 0;
-  color: #0f2350;
-  position: relative;
-  font-size: 1.3rem;
-}
-*/
-
-.radio__wrap{
-  display: flex;
- justify-content: center;
+.small__wrap{
   margin-bottom: 3rem;
 }
-.component__radio{
-  display: flex;
-  flex-wrap: wrap; 
-flex-direction: column;
-}
-.component__radio--list{
- margin-bottom: 3rem;
- font-size: 1.7rem;
-}
 
-.radio-input{
-  display: none;
-}
-.radio-input + label{
-  padding-left: 20px;
-  position:relative;
-  margin-right: 1rem;
-}
-.radio-input + label::before{
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0px;
-  left: -8px;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #0f2350;
-  border-radius: 50%;
-}
-.radio-input:checked + label{
-  color: #d01137;
-}
-.radio-input:checked + label::after{
-  content: "";
-  display: block;
-  position: absolute;
-  top:3px;
-  left: -5px;
-  width: 14px;
-  height: 14px;
-  background: #0f2350;
-  border-radius: 50%;
-}
-@media(min-width:500px){
-  .component__radio{
-  display: flex;
-   justify-content: start; 
-  flex-wrap: wrap; 
-flex-direction: row;
-}
-.radio-input + label::before{
-  top: 1px;
-}
-.radio-input:checked + label::after{
-  top: 4px;
-}
-.component__radio--list{ 
- margin-right: 2rem;
 
-}
-}
+
+
+
+
 
 
 
@@ -702,7 +438,7 @@ flex-direction: row;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   margin-bottom: 3rem;
-  margin-top: 2rem;
+  margin-top: 10rem;
   transition: 0.3s;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -730,13 +466,15 @@ flex-direction: row;
 
 .radio__wrap{
   display: flex;
-  justify-content: center;
+  justify-content:center ;
   margin-bottom: 3rem;
+  padding-left: 1rem;
 }
 .component__radio{
   display: flex;
   flex-wrap: wrap; 
-  flex-direction: column;
+ justify-content: space-around;
+ 
 }
 .component__radio--list{
  margin-bottom: 3rem;
@@ -747,15 +485,16 @@ flex-direction: row;
   display: none;
 }
 .radio-input + label{
-  padding-left: 20px;
+  padding-left: 15px;
   position:relative;
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
+
 .radio-input + label::before{
   content: "";
   display: block;
   position: absolute;
-  top: 0px;
+  top: -1px;
   left: -8px;
   width: 20px;
   height: 20px;
@@ -769,7 +508,7 @@ flex-direction: row;
   content: "";
   display: block;
   position: absolute;
-  top:3px;
+  top:2px;
   left: -5px;
   width: 14px;
   height: 14px;
@@ -777,12 +516,7 @@ flex-direction: row;
   border-radius: 50%;
 }
 @media(min-width:500px){
-  .component__radio{
-  display: flex;
-   justify-content: start; 
-  flex-wrap: wrap; 
-flex-direction: row;
-}
+ 
 .radio-input + label::before{
   top: 1px;
 }
@@ -794,15 +528,152 @@ flex-direction: row;
 
 }
 }
-
-/*☆ボタン*/
-
-/* .fa{
-  font-size:30px;
+/* ------------------送信ボタン-------------- */
+.component__select__btn {
+  padding: 1rem 0;
+  background-color: #0f2350;
+  color: #fffffb;
+  text-align: center;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  width: 140px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
 }
-#rating{
-  font-size:0;
-  width:140px;
-} */
+.component__select__btn:hover {
+  background-color: #fff;
+  color: #0f2350;
+  border: 1px solid #0f2350;
+}
+.component__select__btn::before {
+  content: "";
+  display: block;
+  width: 126px;
+  height: 28px;
+  border: 1px solid #fffffb;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  position: absolute;
+  top: 4px;
+  right: 8px;
+}
+
+@media (min-width: 500px) {
+
+  .component__select__btn {
+    margin: 0 auto 5rem;
+    padding: 0.9rem 0;
+  }
+  .component__select__btn::before {
+    top: 5.5px;
+    right: 7px;
+    height: 34px;
+  }
+  
+}
+@media (min-width: 600px) {
+ 
+  .component__select__btn {
+    /* margin: 0; */
+    padding: 0.9rem 0;
+  }
+}
+/*  関連商品一覧*/
+.product__list__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.product__inner {
+  margin-top: 2rem;
+}
+.product__imgbox {
+  width: 150px;
+  height: 150px;
+}
+.product__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.product__img:hover {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  opacity: 0.8;
+}
+.product__txt--contents {
+  width: auto;
+}
+.product__txt {
+  text-align: left;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  /* white-space: pre; */
+  width: 160px;
+}
+.product__tag {
+  font-size: 0.6rem;
+  border: #0f2350 1px solid;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 0.2rem;
+  background-color: #fff;
+  display: inline-block;
+  margin-bottom: 0.3rem;
+}
+
+@media (min-width: 500px) {
+  .product__list__wrap {
+    width: 400px;
+    margin: 0 auto;
+    gap: 3rem;
+  }
+  .product__imgbox {
+    width: 160px;
+    height: 160px;
+  }
+  .product__txt {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 800px) {
+  .product__list__wrap {
+    width: 800px;
+    margin: 0 auto;
+  }
+  
+}
 
 /* ここまでproduct__datail  商品詳細  林  ここまで */
