@@ -41,7 +41,7 @@ $(function () {
                     for (var i = 0; i < insta.length; i++) {
                         html += '<div class="instagram__test"><a href="' + insta[i].permalink + '" target="_blank"><img class="instagram__pic" src="' + insta[i].media_url + '"></a></div>';
                     }
-                    $("#aa").append(html);
+                    $("#instagram").append(html);
                 },
                 error: function () {
 
