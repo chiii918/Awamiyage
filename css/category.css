@@ -79,11 +79,10 @@
   display: flex;
   justify-content: center;
 }
-.component__heading--txt{
-   text-align: center;
-   font-size: 1.5rem;
-   margin-bottom: 1rem;
-	
+.component__heading--txt {
+  text-align: center;
+  font-size: 1.5rem;
+  /* margin-bottom: 1rem; */
 }
 
 .radio__wrap {
@@ -150,7 +149,7 @@
     top: 4px;
   }
   .component__radio--list {
-    margin-right: 2rem;
+    margin-right: 1rem;
   }
 }
 
@@ -174,16 +173,22 @@
   content: "";
   background-image: url("../img/title03.png");
   background-size: contain;
-  width: 32px;
-  height: 32px;
+  width: 33px;
+  height: 33px;
   position: absolute;
   top: -3px;
   left: -2px;
 }
 @media (min-width: 500px) {
   .component__heading::before {
-    width: 38px;
-    height: 38px;
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (min-width: 1000px) {
+  .component__heading::before {
+    width: 41px;
+    height: 41px;
   }
 }
 /* -------------------------------------------------------------------------------- */
@@ -255,7 +260,6 @@
   .component__select__inner::before {
     width: 40px;
     height: 40px;
-    
   }
 
   .component__select__btn {
@@ -314,9 +318,8 @@
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   width: 80%;
-  
+
   margin-left: 10%;
-  
 }
 
 .cp_ipselect.cp_sl05 input {
@@ -326,21 +329,19 @@
   font-size: 1.1rem;
   width: 200px;
 }
-@media(min-width:500px){
-  .cp_ipselect.cp_sl05 input{
+@media (min-width: 500px) {
+  .cp_ipselect.cp_sl05 input {
     width: 300px;
     max-width: 500px;
-    
-   
   }
 }
-@media(min-width:1000px){
-  .cp_ipselect.cp_sl05 input{
+@media (min-width: 1000px) {
+  .cp_ipselect.cp_sl05 input {
     width: 400px;
     max-width: 500px;
     /* padding-left: 70px; */
   }
-  .component__select__inner::before{
+  .component__select__inner::before {
     left: 10%;
   }
 }
@@ -371,21 +372,30 @@
   border-bottom: 1px solid #0f2350;
 }
 
-/* ----------------------------------------お土産一覧--------------------------------------- */
-
+/* ----------------------------------------お土産一覧.--------------------------------------- */
+.product__container {
+  display: flex;
+  justify-content: center;
+  /* background-color: #fff; */
+}
 .product__list__wrap {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 1rem;
-  margin-bottom:5rem;
+  margin-bottom: 5rem;
+  /* background-color: #d01137; */
+  width: 100%;
+  max-width: 390px;
+  /* padding-left: 1rem; */
 }
 .product__inner {
   margin-top: 2rem;
+  /* background-color: #707070;  */
 }
 .product__imgbox {
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
 }
 .product__img {
   width: 100%;
@@ -414,10 +424,9 @@
 }
 .product__txt {
   text-align: left;
-  font-size: 1rem;
+  font-size: 16px;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
-  /* white-space: pre; */
   width: 160px;
 }
 .product__tag {
@@ -434,32 +443,26 @@
   margin-bottom: 0.3rem;
 }
 
-@media (min-width: 500px) {
+@media (max-width: 366px) {
   .product__list__wrap {
-    width: 400px;
-    margin: 0 auto;
-    gap: 3rem;
-    margin-bottom: 6rem;
-  }
-  .product__imgbox {
-    width: 160px;
-    height: 160px;
-  }
-  .product__txt {
-    font-size: 0.8rem;
+    justify-content: center;
   }
 }
-@media(min-width:600px){
+
+@media (min-width: 626px) {
   .product__list__wrap {
-    margin-bottom: 2rem;
+    gap: 2rem;
+    width: 94%;
+    max-width: 535px;
+    justify-content: start;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 1100px) {
   .product__list__wrap {
-    width: 800px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 720px;
+    gap: 2rem;
   }
-  
 }
 
 /* ---------------------------------------ホームに戻る---------------------------------- */
@@ -844,31 +847,30 @@ li.privacy--point::before {
 }
 /* ----------------------------------ここまでだに---------------------------------- */
 /* news_detail.html */
-.news__detail--campaign--title{
+.news__detail--campaign--title {
   text-align: center;
   font-size: 1.5rem;
   margin-bottom: 3rem;
-   padding: 1rem 1rem;
+  padding: 1rem 1rem;
   margin-bottom: 3rem;
-  border-radius: .5rem;
-  background-color: #0F2350;
-  color: #FFFFFB;
+  border-radius: 0.5rem;
+  background-color: #0f2350;
+  color: #fffffb;
   font-size: 1.5rem;
 }
 
 /*下層キービジュアル*/
-.news__detail--keyvisual{
+.news__detail--keyvisual {
   width: 60%;
   margin: 0 auto;
 }
-.news__detail--keyvisual--img{
+.news__detail--keyvisual--img {
   width: 100%;
   border-radius: 30px;
   margin-bottom: 3rem;
 }
 
 /*下層キービジュアルテキストテキスト*/
-.news__detail--keyvisual--text{
-  
+.news__detail--keyvisual--text {
   margin-bottom: 3rem;
 }
