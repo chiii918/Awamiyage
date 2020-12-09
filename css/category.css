@@ -314,12 +314,13 @@
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   width: 80%;
+  
   margin-left: 10%;
   
 }
 
 .cp_ipselect.cp_sl05 input {
-  padding: 8px 0 8px 80px;
+  padding: 8px 0 8px 45%;
   color: #0f2350;
   position: relative;
   font-size: 1.1rem;
@@ -329,7 +330,7 @@
   .cp_ipselect.cp_sl05 input{
     width: 300px;
     max-width: 500px;
-    padding-left: 50px;
+    
    
   }
 }
@@ -337,12 +338,13 @@
   .cp_ipselect.cp_sl05 input{
     width: 400px;
     max-width: 500px;
-    padding-left: 70px;
+    /* padding-left: 70px; */
   }
   .component__select__inner::before{
     left: 10%;
   }
 }
+
 /* -----------------------------------------------サイト紹介文--------------------------- */
 .component__txt {
   text-align: center;
