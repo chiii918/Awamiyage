@@ -65,3 +65,15 @@ document.addEventListener("scroll", function () {
     }
   }
 });
+
+
+//slick
+
+$('.keyvisual__contents').slick({
+    autoplay:true,
+    autoplaySpeed:2000,
+    arrows:false,
+    dots:false,
+    fade :true,
+    pauseOnHover:false
+});
