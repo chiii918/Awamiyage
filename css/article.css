@@ -143,7 +143,12 @@
     margin: 5rem 0 5rem 0;
   }
 }
-
+.report__txt{
+  white-space: nowrap;
+	text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+}
 /* ---------------------サブカテゴリーページ--- */
 /* 商品写真 (名産ページ、サブカテゴリー共通)*/
 .product__list__wrap {
