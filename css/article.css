@@ -226,9 +226,7 @@
     width: 800px;
     margin: 0 auto;
   }
-  .br {
-    display: none;
-  }
+  
 }
 
 /*-------------------------------- 徳島の名産品ページ---- */
@@ -308,6 +306,7 @@
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
   border: transparent;
+  margin-top: 5rem;
 }
 .component__btn--home:hover {
   background-color: #fff;
