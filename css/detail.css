@@ -24,7 +24,9 @@
 .component__title{
     font-size: 2.8rem;
     font-family: hannarifont;
+    
 }
+
 
 /*カテゴリテキスト画像*/
 .component__title--img{
@@ -257,7 +259,15 @@
   width: 100%;
 
 }
-
+.component__main-title{
+  font-size: 2.2rem;
+    font-family: hannarifont;
+}
+@media(min-width:1000px){
+  .component__main-title{
+  font-size: 2.5rem;
+}
+}
 /*下層キービジュアル*/
 
 /*クリック画像最初の画像*/
@@ -363,18 +373,49 @@ padding-bottom: 1rem;
   margin-bottom: 3rem;
 }
 /*入り数　味　価格　品目*/
+.product__evalution--txt{
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+.star{
+  color: #d01137;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
 .product__data--list{
-  padding: 1rem;
-  border-bottom: #0F2350 1px solid;
-}
-.product__data__contents{
-  margin-bottom: 3rem;
-}
-@media(min-width:768px){
-  .product__data--list{
   padding: 1.5rem;
   border-bottom: #0F2350 1px solid;
 }
+.product__data--tag{
+  padding: .4rem;
+  border: #0F2350 1px solid;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: #FFFFFB;
+  margin-right: 1rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.product__data__contents{
+  margin-bottom: 3rem;
+  
+}
+@media(min-width:768px){
+  .product__data--list{
+  padding: 2rem 0 .7rem;
+  border-bottom: #0F2350 1px solid;
+}
+.product__evalution--txt{
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+
 }
 
 
@@ -382,10 +423,14 @@ padding-bottom: 1rem;
 /*テーブル*/
 .product_detail__report--title--table{
   padding: 1rem 1rem;
-  border-radius: .5rem .5rem 0 0;
+  border-radius: 10px 10px 0 0;
   background-color: #0F2350;
   color: #FFFFFB;
   font-size: 1.5rem;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -ms-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
 }
 .product_detail__report--inner{
   margin-top: 7rem;
@@ -396,9 +441,22 @@ padding-bottom: 1rem;
   margin-bottom: 2rem;
   border:#0F2350 solid 3px;
   text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-collapse: separate;
+  border-spacing: 0;
   
 }
-
+ tr:last-child th{
+   border-bottom-left-radius: 10px;
+   border-bottom: none;
+   border-left: none;
+ }
+ tr:last-child td{
+   border-bottom-right-radius: 10px;
+   border-bottom: none;
+   /* border-left: none; */
+ }
 tr,th,td {
     border: #0F2350 solid 1px;           
   }
@@ -408,12 +466,17 @@ tr,th,td {
   vertical-align: middle;
   text-align: center;
   background-color: #fff;
+  border-bottom: none;
+   border-left: none;
 }
 
 .td--right{
   width: 58%;
   padding: 1rem;
   background-color: #fff;
+   border-bottom: none;
+   border-right: none;
+   border-left: none;
 }
 
 .small__wrap{
@@ -421,8 +484,8 @@ tr,th,td {
 }
 .small__txt{
   font-size: 1.1rem;
+  margin-bottom: 1rem;
 }
-
 
 
 
@@ -501,31 +564,15 @@ tr,th,td {
   margin-right: 2rem;
 }
 
-/* .radio-input + label::before{
-  content: "";
-  display: block;
-  position: absolute;
-  top: -1px;
-  left: -8px;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #0f2350;
-  border-radius: 50%;
-} */
 .radio-input:checked + label{
   color: #d01137;
 }
-/* .radio-input:checked + label::after{
-  content: "";
-  display: block;
-  position: absolute;
-  top:2px;
-  left: -5px;
-  width: 14px;
-  height: 14px;
-  background: #0f2350;
-  border-radius: 50%;
-}  */
+
+.product__evalution--txt-s{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
 @media(min-width:500px){
  
 .radio-input + label::before{
@@ -559,7 +606,7 @@ tr,th,td {
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
-  margin-top: 3rem;
+  /* margin-top: 2rem; */
   margin-bottom: 5rem;
 }
 .component__select__btn:hover {
