@@ -850,6 +850,8 @@ li.privacy--point::before {
   font-size: 1.2rem;
 }
 /* ----------------------------------ここまでだに---------------------------------- */
+
+
 /* news_detail.html */
 .news__detail--campaign--title {
   text-align: center;
@@ -876,5 +878,28 @@ li.privacy--point::before {
 
 /*下層キービジュアルテキストテキスト*/
 .news__detail--keyvisual--text {
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
+}
+
+.maker__info--txt{
+  background-color: #0f2350;
+  display: inline-block;
+  color: #fffffb;
+  padding: .7rem 1rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-bottom: 2rem;
+}
+.maker__info--list{
+  border-bottom: #0f2350  2px solid;
+  padding: 1rem 0;
+  
+}
+.maker__info-wrap{
+  margin-bottom: 4rem;
+  margin-top: 5rem;
+  
 }
