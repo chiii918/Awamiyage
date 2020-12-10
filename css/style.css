@@ -374,23 +374,23 @@ body{
   overflow: hidden;
 } 
  .keyvisual__contents:before{
-  content: "";
-  display: block;
+  /* content: "";
+  display: block; */
   /* padding-top: 100%; */
 } 
  .keyvisual__img{
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   height: 100%;
-  top: 0;
+  /* top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  margin: auto;
+  margin: auto; */
   object-fit: cover;
 }
 .slick-slide{
-  height: 337px;
+  height: 50vh;
 }
 @media screen and (min-width:500px){
   .keyvisual__contents{
@@ -443,34 +443,75 @@ body{
   }
 }
 /* キービジュアルのテキスト */
-@media screen and (min-width:800px){
-  /* .keyvisual__wrap{
-    display: flex;
-    align-content: flex-start;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  } */
-  .keyvisual__txt{
-    padding: 1rem .3rem 1rem 0;   /* フォントの関係で微妙に左右の配置が違って見えるところの修正 */
-    margin-right: 10%;
-    -webkit-backdrop-filter: blur(24px);
-    backdrop-filter: blur(12px);
-    font-size: 1.7rem;
-    height: auto;
-    /* text-align: center; */
-    color: #FFFFFB;
-    line-height: 1.5;
-    -webkit-writing-mode: vertical-rl;
-    -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
-  }
-  .keyvisual__txt:last-child{
-    margin: 0;
-  }
+.catchcopy__img1 {
+  position: absolute;
+  top: 13%;
+  left: 53%;
+  width: 6%;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+  padding: .5rem;
+  padding-left: 1.2rem;
 }
-
+.catchcopy__img2 {
+  position: absolute;
+  top: 28%;
+  left: 44%;
+  width: 5.8%;
+   z-index: 999;
+  backdrop-filter: blur(10px);
+  padding: .5rem;
+  padding-left: 1.2rem;
+  
+}
+ @media(max-width:768px){
+.catchcopy__img1 {
+  position: absolute;
+  top: 13%;
+  left: 53%;
+  width: 7%;
+  
+}
+.catchcopy__img2 {
+  position: absolute;
+  top: 28%;
+  left: 44%;
+  width: 7%;
+  
+}
+} 
+ @media(max-width:500px){
+.catchcopy__img1 {
+  position: absolute;
+  top: 13%;
+  left: 53%;
+  width: 8%;
+  
+}
+.catchcopy__img2 {
+  position: absolute;
+  top: 28%;
+  left: 44%;
+  width: 8%;
+  
+}
+} 
+ @media(max-width:375px){
+.catchcopy__img1 {
+  position: absolute;
+  top: 13%;
+  left: 53%;
+  width: 11%;
+  
+}
+.catchcopy__img2 {
+  position: absolute;
+  top: 28%;
+  left: 40%;
+  width: 10%;
+  
+}
+} 
 
 /* ----- サイト紹介 ----- */
 .introduction__container{
@@ -609,36 +650,103 @@ body{
 
 
 /* ----- エリアで探す ----- */
-@media(min-width:768px){
-  .area__container{
- background-image: url("../img/area_icon02.png"),url(""),url("../img/area_icon02.png");
- background-repeat: no-repeat,no-repeat,no-repeat;
- background-position: 90% 90%,10% 20%,60% 60%;
- background-size: 15%,16%,30%;
- animation: loop 9s linear infinite;
- animation-fill-mode: backwards;
- -webkit-animation: loop 9s linear infinite;
-}
-}
-@-webkit-keyframes loop{
- 0% {-webkit-background-position: 0,0;}
- 100%{-webkit-background-position: 1280px, 0;}
-}
-
-@keyframes loop {
- 0% { background-position-x: 0, 0;}
- 100% { background-position-x: 1280px, 0 ;}
-} 
-
-
-
 .area__contents{
   position: relative;
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
+}
 
-  /* background-color: aqua; */
+/* 亀泳ぐ */
+
+.area__img--kame{
+  position: absolute;
+  bottom:10%;
+  left: 0%;
+  animation: loop 9s linear infinite ;
+  animation-fill-mode: forwards;
+  -webkit-animation: loop 9s linear infinite ;
+  display: none;
+}
+@media(min-width:768px){
+  .area__img--kame{
+    display: block;
+  }
+}
+
+@keyframes loop {
+  0%{
+    transform: translateX(-100px) translateY(0px);
+    -webkit-transform: translateX(-100px) translateY(0px);
+    -moz-transform: translateX(-100px) translateY(0px);
+    -ms-transform: translateX(-100px) translateY(0px);
+    -o-transform: translateX(-100px) translateY(0px);
+}
+  50%{
+    transform: translateX(600px) translateY(100px);
+    -webkit-transform: translateX(600px) translateY(100px);
+    -moz-transform: translateX(600px) translateY(100px);
+    -ms-transform: translateX(600px) translateY(100px);
+    -o-transform: translateX(600px) translateY(100px);
+}
+
+100%{
+  transform: translateX(1280px) translateY(-100px);
+  -webkit-transform: translateX(1280px) translateY(-100px);
+  -moz-transform: translateX(1280px) translateY(-100px);
+  -ms-transform: translateX(1280px) translateY(-100px);
+  -o-transform: translateX(1280px) translateY(-100px);
+}
+}
+
+/* わかめアニメ */
+.area__img--wakame{
+  position: absolute;
+  top:10%;
+  right: 8%;
+  animation: wakame 3s linear infinite ;
+  animation-fill-mode: forwards;
+  -webkit-animation: wakame 3s linear infinite alternate-reverse;
+  display: none;
+}
+@media(min-width:768px){
+  .area__img--wakame{
+    display: block;
+  }
+}
+
+@-webkit-keyframes wakame{
+ 0% { transform:translateY(0px) ; -webkit-transform:translateY(0px) ; -moz-transform:translateY(0px) ; -ms-transform:translateY(0px) ; -o-transform:translateY(0px) ; }
+ 100%{ transform:translateY(30px) ; -webkit-transform:translateY(30px) ; -moz-transform:translateY(30px) ; -ms-transform:translateY(30px) ; -o-transform:translateY(30px) ; }
+}
+
+@keyframes wakame {
+ 0% { transform:translateY(0px) ; -webkit-transform:translateY(0px) ; -moz-transform:translateY(0px) ; -ms-transform:translateY(0px) ; -o-transform:translateY(0px) ; }
+ 100%{ transform:translateY(30px) ; -webkit-transform:translateY(30px) ; -moz-transform:translateY(30px) ; -ms-transform:translateY(30px) ; -o-transform:translateY(30px) ; }
+ 
+}
+
+.area__img--kazura{
+  position: absolute;
+  top:15%;
+  left: 10%;
+  width: 120px;
+  animation: swing 4s linear infinite alternate-reverse;
+  animation-fill-mode: forwards;
+  -webkit-animation: swing 4s linear infinite alternate-reverse;
+  display: none;
+}
+@keyframes swing {
+ 0% { transform: rotate(0deg) }
+    25% { transform: rotate(5deg); -webkit-transform: rotate(5deg); -moz-transform: rotate(5deg); -ms-transform: rotate(5deg); -o-transform: rotate(5deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-5deg); -webkit-transform: rotate(-5deg); -moz-transform: rotate(-5deg); -ms-transform: rotate(-5deg); -o-transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+@media(min-width:768px){
+  .area__img--kazura{
+    display: block;
+  }
 }
 
 
