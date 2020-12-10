@@ -369,19 +369,19 @@ body{
 .keyvisual__contents{
   position: relative;
   width: 100%;
-  height: 40vh;
+  height:auto;
   border-radius: 20px;
   overflow: hidden;
 } 
  .keyvisual__contents:before{
   content: "";
   display: block;
-  padding-top: 100%;
+  /* padding-top: 100%; */
 } 
  .keyvisual__img{
   position: absolute;
   width: 100%;
-  height: 85vh;
+  height: 100%;
   top: 0;
   right: 0;
   bottom: 0;
@@ -389,9 +389,12 @@ body{
   margin: auto;
   object-fit: cover;
 }
+.slick-slide{
+  height: 337px;
+}
 @media screen and (min-width:500px){
   .keyvisual__contents{
-    height: 85vh;
+    height: auto;
   }
   .keyvisual__contents:before{
     padding-top: 0;
@@ -399,10 +402,9 @@ body{
   .keyvisual__img{
     position: relative;
   }
+  .slick-slide{
+  height: auto;
 }
-.slick-slide img{
-  /* width: 100%; */
-  /* height: 100%; */
 }
 
 /* スクロールアイコンのアニメーション */
@@ -548,12 +550,40 @@ body{
 .news__category{
   display: none;
 }
+
 @media screen and (min-width:500px){
   .news__category{
     display: inline;
   }
 }
-
+.news__btn{
+  width: 40%;
+  margin: 3rem auto 0;
+  background-color: #0F2350;
+  color: #FFFFFB;
+}
+.news__btn:hover{
+  border: 1px solid #0F2350;
+  background-color: #FFFFFB;
+  color: #0F2350;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+  box-shadow: 4px 4px 4px;
+}
+.news__btn:active{
+  box-shadow: none;
+}
+@media screen and (min-width:600px){
+ 
+  
+  .news__btn{
+    margin: 3rem 0 0 80%;
+    width: 20%;
+  }
+}
 
 /* ----- おすすめ ----- */
 .recommend__container{
@@ -900,11 +930,14 @@ body{
 }
 .instagram__pic{
   width: 100%;
+  max-width: 149px;
   height: 100%;
+  max-height: 149px;
 }
 .instagram__test{
-  width: 47%;
-  height: 200px;
+  width: 45%;
+  max-width: 149px;
+  height: 149px;
   margin-bottom: 1rem;
   background-color: #FFFFFB;
   border: 1px solid #000;
