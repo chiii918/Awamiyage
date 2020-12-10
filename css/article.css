@@ -156,9 +156,14 @@
 @media screen and (min-width:1000px){
   .report__img--cover{
     width: 23%;
+    max-width: 180px;
  }
   .report__contents__margin{
     margin: 5rem 0 5rem 0;
+  }
+  .report__contents--list{
+  width: 85%;
+    margin: 0 auto;
   }
 }
 .report__txt{
@@ -167,6 +172,8 @@
   overflow: hidden;
   width: 100%;
 }
+
+
 /* ---------------------サブカテゴリーページ--- */
 /* 商品写真 (名産ページ、サブカテゴリー共通)*/
 .product__container {

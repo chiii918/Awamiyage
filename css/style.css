@@ -470,7 +470,7 @@ body{
   top: 13%;
   left: 53%;
   width: 7%;
-  
+ 
 }
 .catchcopy__img2 {
   position: absolute;
@@ -486,6 +486,7 @@ body{
   top: 13%;
   left: 53%;
   width: 8%;
+  max-width: 30px;
   
 }
 .catchcopy__img2 {
@@ -493,7 +494,7 @@ body{
   top: 28%;
   left: 44%;
   width: 8%;
-  
+  max-width: 30px;
 }
 } 
  @media(max-width:375px){
