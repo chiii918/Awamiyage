@@ -369,19 +369,19 @@ body{
 .keyvisual__contents{
   position: relative;
   width: 100%;
-  height: 20vh;
+  height: 40vh;
   border-radius: 20px;
   overflow: hidden;
-}
-.keyvisual__contents:before{
+} 
+ .keyvisual__contents:before{
   content: "";
   display: block;
   padding-top: 100%;
-}
-.keyvisual__img{
+} 
+ .keyvisual__img{
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 85vh;
   top: 0;
   right: 0;
   bottom: 0;
@@ -399,6 +399,10 @@ body{
   .keyvisual__img{
     position: relative;
   }
+}
+.slick-slide img{
+  /* width: 100%; */
+  /* height: 100%; */
 }
 
 /* スクロールアイコンのアニメーション */
@@ -438,14 +442,14 @@ body{
 }
 /* キービジュアルのテキスト */
 @media screen and (min-width:800px){
-  .keyvisual__wrap{
+  /* .keyvisual__wrap{
     display: flex;
     align-content: flex-start;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-  }
+  } */
   .keyvisual__txt{
     padding: 1rem .3rem 1rem 0;   /* フォントの関係で微妙に左右の配置が違って見えるところの修正 */
     margin-right: 10%;

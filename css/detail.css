@@ -490,7 +490,7 @@ tr,th,td {
   margin-right: 2rem;
 }
 
-.radio-input + label::before{
+/* .radio-input + label::before{
   content: "";
   display: block;
   position: absolute;
@@ -500,11 +500,11 @@ tr,th,td {
   height: 20px;
   border: 2px solid #0f2350;
   border-radius: 50%;
-}
+} */
 .radio-input:checked + label{
   color: #d01137;
 }
-.radio-input:checked + label::after{
+/* .radio-input:checked + label::after{
   content: "";
   display: block;
   position: absolute;
@@ -514,7 +514,7 @@ tr,th,td {
   height: 14px;
   background: #0f2350;
   border-radius: 50%;
-}
+}  */
 @media(min-width:500px){
  
 .radio-input + label::before{
