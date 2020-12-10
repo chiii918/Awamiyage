@@ -387,10 +387,13 @@ padding-bottom: 1rem;
   color: #FFFFFB;
   font-size: 1.5rem;
 }
+.product_detail__report--inner{
+  margin-top: 7rem;
+}
 
 .table01{
   width: 100%;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   border:#0F2350 solid 3px;
   text-align: center;
   
@@ -415,6 +418,9 @@ tr,th,td {
 
 .small__wrap{
   margin-bottom: 3rem;
+}
+.small__txt{
+  font-size: 1.1rem;
 }
 
 
@@ -464,10 +470,15 @@ tr,th,td {
 } 
 /*ここまでホームボタン*/
 
+/* ラジオ */
+.title__container{
+  margin-top: 7rem;
+}
+
 .radio__wrap{
   display: flex;
   justify-content:center ;
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
   padding-left: 1rem;
 }
 .component__radio{
@@ -593,19 +604,29 @@ tr,th,td {
   }
 }
 /*  関連商品一覧*/
+.product__container {
+  display: flex;
+  justify-content: center;
+  /* background-color: #fff; */
+}
 .product__list__wrap {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
+  /* background-color: #d01137; */
+  width: 100%;
+  max-width: 390px;
+  /* padding-left: 1rem; */
 }
 .product__inner {
   margin-top: 2rem;
+  /* background-color: #707070;  */
 }
 .product__imgbox {
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
 }
 .product__img {
   width: 100%;
@@ -634,10 +655,9 @@ tr,th,td {
 }
 .product__txt {
   text-align: left;
-  font-size: 1rem;
+  font-size: 16px;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
-  /* white-space: pre; */
   width: 160px;
 }
 .product__tag {
@@ -654,26 +674,26 @@ tr,th,td {
   margin-bottom: 0.3rem;
 }
 
-@media (min-width: 500px) {
+@media (max-width: 366px) {
   .product__list__wrap {
-    width: 400px;
-    margin: 0 auto;
-    gap: 3rem;
-  }
-  .product__imgbox {
-    width: 160px;
-    height: 160px;
-  }
-  .product__txt {
-    font-size: 0.8rem;
+    justify-content: center;
   }
 }
-@media (min-width: 800px) {
+
+@media (min-width: 626px) {
   .product__list__wrap {
-    width: 800px;
-    margin: 0 auto;
+    gap: 2rem;
+    width: 94%;
+    max-width: 535px;
+    justify-content: start;
   }
-  
+}
+@media (min-width: 1100px) {
+  .product__list__wrap {
+    width: 100%;
+    max-width: 720px;
+    gap: 2rem;
+  }
 }
 
 /* ここまでproduct__datail  商品詳細  林  ここまで */
