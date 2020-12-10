@@ -89,16 +89,34 @@
   margin: 8rem auto ;
 }
 .introduction__fave__container::before{
-    display: block;
-    content:"";
-    background-image: url(../img/fave_icon1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 6.5rem;
-    height: 6.5rem;
-    position: absolute;
-    top: -50px;
-    left: 20px;
+     display: block;
+     content:"";
+     background-image: url(../img/fave_icon1.png);
+     background-size: contain;
+     background-repeat: no-repeat;
+     width: 6.5rem;
+     height: 6.5rem;
+     position: absolute;
+     top: -50px;
+     left: 20px;
+     animation: scale 2s infinite alternate;
+     -webkit-animation: scale 2s infinite alternate;
+}
+@keyframes scale{
+  0%{
+    transform: scale(.8);
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    -o-transform: scale(.8);
+}
+100%{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
 }
 
 .introduction__fave__txt{
