@@ -624,9 +624,15 @@ tr,th,td {
   margin-top: 2rem;
   /* background-color: #707070;  */
 }
+.product__imgbox:before{
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
 .product__imgbox {
   width: 160px;
   height: 160px;
+  position: relative;
 }
 .product__img {
   width: 100%;
@@ -641,6 +647,13 @@ tr,th,td {
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  object-fit: cover;
 }
 .product__img:hover {
   border-radius: 50%;
