@@ -220,7 +220,7 @@
   padding: 2.5rem;
 }
 
-@media screen and (min-width:732x){
+@media screen and (min-width:732px){
   .report_detail--flex-right--text--first{
     padding-top: 2rem;
   }
