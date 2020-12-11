@@ -77,3 +77,24 @@ $('.keyvisual__contents').slick({
     fade :true,
     pauseOnHover:false
 });
+
+
+//商品写真のホバー
+
+$(function(){
+
+	$('.product__list--link').hover(
+		function(){
+			var i = $('.product__list--link').index(this);
+       $('.product__txt').eq(i).css("color", "#a81f22");
+       $(".product__img").eq(i).css("opacity", "0.8");
+        $(".product__img").eq(i).css("border-radius", "50%");
+		},
+		function(){
+			var i = $('.product__list--link').index(this);
+      $('.product__txt').eq(i).css("color", "");
+       $(".product__img").eq(i).css("opacity", "");
+        $(".product__img").eq(i).css("border-radius", "");
+		}
+	);
+});
