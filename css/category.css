@@ -323,7 +323,7 @@
 }
 @media (min-width: 600px){
   .component__select__wrap{
-    width: 80%;
+    width: 90%;
     max-width: 700px;
   }
 }
