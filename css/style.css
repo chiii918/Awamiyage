@@ -692,11 +692,11 @@ body{
 }
 
 100%{
-  transform: translateX(1280px) translateY(-100px);
-  -webkit-transform: translateX(1280px) translateY(-100px);
-  -moz-transform: translateX(1280px) translateY(-100px);
-  -ms-transform: translateX(1280px) translateY(-100px);
-  -o-transform: translateX(1280px) translateY(-100px);
+  transform: translateX(1000px) translateY(-100px);
+  -webkit-transform: translateX(1000px) translateY(-100px);
+  -moz-transform: translateX(1000px) translateY(-100px);
+  -ms-transform: translateX(1000px) translateY(-100px);
+  -o-transform: translateX(1000px) translateY(-100px);
 }
 }
 
