@@ -186,7 +186,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 1rem;
-  margin-bottom: 5rem;
+  margin-bottom: 8rem;
   /* background-color: #d01137; */
   width: 100%;
   max-width: 390px;
@@ -351,7 +351,7 @@
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  margin-bottom: 200px;
+  margin-bottom: 100rem;
   transition: 0.3s;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
