@@ -1,0 +1,8 @@
+categorys_id	categorys_name	register_time	register_person	update_time	update_person	categorys_show
+1	酒	2020-12-7 12:00:00	Admin			TRUE
+2	ソフトドリンク	2020-12-7 12:00:00	Admin			TRUE
+3	農産物	2020-12-7 12:00:00	Admin			TRUE
+4	海産物	2020-12-7 12:00:00	Admin			TRUE
+5	お菓子	2020-12-7 12:00:00	Admin			TRUE
+6	おかず	2020-12-7 12:00:00	Admin			TRUE
+7	その他	2020-12-7 12:00:00	Admin			TRUE
