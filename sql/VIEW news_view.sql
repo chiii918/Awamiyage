@@ -20,5 +20,5 @@ CREATE VIEW news_view AS SELECT
 FROM reports
 LEFT JOIN makers ON reports.makers_id = makers.makers_id
 WHERE reports.reports_type = 3 
-AND reports.delete_time IS NULL AND reports.delete_person IS NULL 
+AND reports.delete_time IS NULL OR reports.delete_person IS NULL 
 ORDER BY register_time DESC;

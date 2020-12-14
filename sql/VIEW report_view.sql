@@ -93,6 +93,6 @@ LEFT JOIN makers AS m5 ON p5.makers_id = m5.makers_id
 
 WHERE reports.reports_type = 1 
 OR reports.reports_type = 2 
-AND reports.delete_time IS NULL AND reports.delete_person IS NULL 
+AND reports.delete_time IS NULL OR reports.delete_person IS NULL 
 ORDER BY register_time DESC;
 
