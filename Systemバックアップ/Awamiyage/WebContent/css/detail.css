@@ -1,0 +1,766 @@
+@charset "utf-8";
+
+/* ここから report_detail  試食レポート詳細  林  ここから */
+
+   @font-face{
+  font-family: hannarifont;
+  src: url("../hannari/Hannari.otf") format('opentype');
+  src: url("../hannari/Hannari.woff")format('woff');
+}
+
+/* @media screen and (min-width:1000px){
+ *{
+    padding: 0 5rem;
+  }
+} */
+
+/*カテゴリ*/
+.component__wrap{
+    width: 100%;
+    margin: 4rem auto 1rem;
+
+}
+
+.component__title{
+    font-size: 2.8rem;
+    font-family: hannarifont;
+
+}
+
+
+/*カテゴリテキスト画像*/
+.component__title--img{
+  width: 2.7rem;
+  height: auto;
+}
+
+.keyvisual__sub--img{
+  width: 100%;
+  height: 150px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+@media screen and (min-width:500px){
+
+  .keyvisual__sub--img{
+  height: 360px;
+  }
+
+  .section__container--report_detail--innner{
+    padding: 0 2rem;
+  }
+}
+
+/*パソコンサイズにしたときの両幅*/
+
+@media screen and (min-width:1000px){
+ .section__container--report_detail--innner{
+    padding: 0 5rem;
+  }
+}
+
+/* パンくずリスト */
+
+.breadcrumb__txt{
+
+    margin-bottom: 3rem;
+    padding: 0.3rem;
+    background-color: #FFFFFF;
+    font-size: 1rem;
+}
+
+/*ここまでkeyvisual__template"*/
+
+
+/*下層キービジュアル*/
+.report_detail--keyvisual--img{
+  width: 100%;
+  border-radius: 30px;
+  margin-bottom: 3rem;
+}
+
+/*下層キービジュアルテキストテキスト*/
+.report_detail--keyvisual--text{
+  margin-bottom: 6rem;
+  margin-top: 5rem;
+}
+
+/*目次*/
+.report_detail--chapter--wrap{
+ width: 100%;
+ display: flex;
+ justify-content: center;
+}
+
+.report_detail--chapter--inner{
+
+  display: flex;
+  justify-content: center;
+   border: 2px dotted #0F2350;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+/*目次の中身*/
+
+.report_detail__chapter--list li{
+  padding: 2rem;
+}
+
+.report_detail__chapter--item{
+  border-bottom: dotted 2px#0F2350;
+
+}
+/*目次の行のみ*/
+.report_detail__chapter--item--first{
+  display: inline-block;
+  width: 100px;
+  border-bottom: dotted 2px#0F2350;
+}
+
+/*まとめの行のみ*/
+.report_detail__chapter--item--last{
+  text-align: start;/*？？*/
+}
+
+/*スパン要素をインラインブロックに変換して横幅を指定*/
+@media screen and (min-width:780px){
+ .report_detail__chapter--item--first{
+  display: inline-block;
+  width: 150px;
+  border-bottom: dotted 2px#0F2350;
+}
+/*目次全体の横幅*/
+.report_detail--chapter--inner{
+  width: 70%;
+}
+
+
+}
+.report_detail--keyvisual{
+  max-width: 100%;
+}
+.news__detail--keyvisual--img{
+  width: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+/*h3 タイトル*/
+
+.report_detail__report--title{
+  padding: 1rem 1rem;
+  margin-bottom: 3rem;
+  border-radius: .5rem;
+  background-color: #0F2350;
+  color: #FFFFFB;
+  font-size: 1.5rem;
+}
+
+/*画像はkeyvisual__imgで統一*/
+
+.keyvisual__wrap--img{
+  margin-bottom: 2.5rem;
+  border-color: red;
+}
+
+/*テキストの中身*/
+.report_detail__report--txt{
+  margin-bottom: 3rem;
+}
+
+/*まとめ*/
+
+.report_detail__evaluation{
+  margin-bottom: 3rem;
+}
+
+.report_detail__evaluation--title{
+  font-size: 1.4rem;
+}
+
+/*まとめ２カラム外側*/
+
+.report_detail--flex-wrap{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 5rem;
+  border:5px solid #0F2350;
+  border-radius: 2rem;
+}
+
+/*flex左側*/
+.report_detail--flex-left{
+ width: 40%;
+ height: auto;
+}
+
+/*flex左側画像のみ*/
+.report_detail--flex---img{
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+}
+
+/*flex右側*/
+
+.report_detail--flex-right{
+  width: 60%;
+  text-align: center;
+  padding: 2.5rem;
+}
+
+@media screen and (min-width:732px){
+  .report_detail--flex-right--text--first{
+    padding-top: 2rem;
+  }
+  .report_detail--flex-right--text--second{
+     padding-top: 2rem;
+  }
+
+}
+
+
+
+
+
+@media screen and (min-width:600px){
+  .main__container{/*部分的に消したいときは上書きで消す*/
+    background-image:url();
+  }
+}
+
+/* ここまでreport_detail  試食レポート詳細  林  ここまで */
+
+
+
+/*----------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------------*/
+
+
+
+
+/* ここからproduct__datail  商品詳細  林  ここから */
+
+.product_detail--keyvisual--inner{
+  width: 100%;
+
+}
+.component__main-title{
+  font-size: 2.2rem;
+    font-family: hannarifont;
+}
+@media(min-width:1000px){
+  .component__main-title{
+  font-size: 2.5rem;
+}
+}
+/*下層キービジュアル*/
+
+/*クリック画像最初の画像*/
+
+.big_image img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+/*クリック画像大枠*/
+.images{
+  display: flex;
+  justify-content: center;
+}
+/*クリック画像３枚*/
+.img_click{
+  width: 30%;
+  margin: 2rem 0.5rem;
+  border-radius: 10px;
+  max-height: 80px;
+}
+
+/*画像３枚切り替え部分大枠*/
+
+.images--wrap{
+  width: 100%;
+}
+
+/*画像３枚切り替え部分画像のみ*/
+
+.images img {
+    width: 30%;
+}
+
+.opa{
+    animation: opaopa 1s;
+}
+
+@keyframes opaopa {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+/*レスポンシブでパソコンサイズのとき２カラム*/
+
+.product_detail--keyvisual--wrap{
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .product_detail--keyvisual--wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  /*左の画像４枚*/
+  .product_detail--keyvisual--inner{
+    width: 50%;
+  }
+
+  .product__data__contents{
+    width: 40%;
+    margin-right: 3rem;
+  }
+
+
+}
+
+@media (min-width: 1000px) {
+  .product_detail--keyvisual--inner{
+    width: 49%;
+    align-self: center;
+  }
+   .product_detail--information{
+    width: 47%;
+    align-self: center;
+  }
+
+}
+
+/*商品名～ユーザー評価までの中身*/
+
+.product_detail--information > p{
+border-bottom: 1px solid  #0F2350;
+margin-bottom: 1.5rem;
+padding-bottom: 1rem;
+}
+
+/*商品について*/
+.product_detail__report--title{
+  padding: 1rem 1rem;
+  margin-bottom: 3rem;
+  border-radius: .5rem;
+  background-color: #0F2350;
+  color: #FFFFFB;
+  font-size: 1.5rem;
+}
+
+/*テキストの中身*/
+.product_detail__report--txt{
+  margin-bottom: 3rem;
+}
+/*入り数　味　価格　品目*/
+.product__evalution--txt{
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+.star{
+  color: #d01137;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+.product__data{
+	word-wrap: break-word;
+}
+.product__data--list{
+  padding: 1.5rem;
+  border-bottom: #0F2350 1px solid;
+}
+.product__data--tag{
+  padding: .4rem;
+  border: #0F2350 1px solid;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: #FFFFFB;
+  margin-right: 1rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.product__data__contents{
+  margin-bottom: 3rem;
+
+}
+@media(min-width:768px){
+  .product__data--list{
+  padding: 2rem 0 .7rem;
+  border-bottom: #0F2350 1px solid;
+}
+.product__evalution--txt{
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+
+}
+
+
+
+/*テーブル*/
+.product_detail__report--title--table{
+  padding: 1rem 1rem;
+  border-radius: 10px 10px 0 0;
+  background-color: #0F2350;
+  color: #FFFFFB;
+  font-size: 1.5rem;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -ms-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
+}
+.product_detail__report--inner{
+  margin-top: 7rem;
+}
+
+.table01{
+  width: 100%;
+  margin-bottom: 2rem;
+  border:#0F2350 solid 3px;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-collapse: separate;
+  border-spacing: 0;
+
+}
+ tr:last-child th{
+   border-bottom-left-radius: 10px;
+   border-bottom: none;
+   border-left: none;
+ }
+ tr:last-child td{
+   border-bottom-right-radius: 10px;
+   border-bottom: none;
+   /* border-left: none; */
+ }
+tr,th,td {
+    border: #0F2350 solid 1px;
+  }
+
+.th--left{
+  width: 38%;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #fff;
+  border-bottom: none;
+   border-left: none;
+}
+
+.td--right{
+  width: 58%;
+  padding: 1rem;
+  background-color: #fff;
+   border-bottom: none;
+   border-right: none;
+   border-left: none;
+}
+
+.small__wrap{
+  margin-bottom: 3rem;
+}
+.small__txt{
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+/*ホームボタン*/
+
+.component__btn--home {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #0f2350;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  border: transparent;
+}
+.component__btn--home:hover {
+  background-color: #fff;
+  color: #0f2350;
+  box-shadow: 3px 3px 3px #0f2350;
+}
+.component__btn--box {
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+@media (min-width: 600px) {
+  .component__btn--box {
+    display: flex;
+    justify-content: center;
+  }
+}
+/*ここまでホームボタン*/
+
+/* ラジオ */
+.title__container{
+  margin-top: 7rem;
+}
+
+.radio__wrap{
+  display: flex;
+  justify-content:center ;
+  /* margin-bottom: 3rem; */
+  /* padding-left: 1rem; */
+}
+.component__radio{
+  display: flex;
+  flex-wrap: wrap;
+ justify-content: space-around;
+
+}
+.component__radio--list{
+ margin-bottom: 3rem;
+ font-size: 1.7rem;
+}
+
+.radio-input{
+  display: none;
+}
+.radio-input + label{
+  padding-left: 1.1rem;
+  position:relative;
+  margin-right: 1.1rem;
+}
+
+.radio-input:checked + label{
+  color: #d01137;
+}
+
+.product__evalution--txt-s{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+@media(min-width:500px){
+
+.radio-input + label::before{
+  top: 1px;
+}
+.radio-input:checked + label::after{
+  top: 4px;
+}
+.component__radio--list{
+ margin-right: 2rem;
+
+}
+}
+/* ------------------送信ボタン-------------- */
+.component__select__btn {
+  padding: 1rem 0;
+  background-color: #0f2350;
+  color: #fffffb;
+  text-align: center;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  width: 140px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  /* margin-top: 2rem; */
+  margin-bottom: 5rem;
+}
+.component__select__btn:hover {
+  background-color: #fff;
+  color: #0f2350;
+  border: 1px solid #0f2350;
+}
+.component__select__btn::before {
+  content: "";
+  display: block;
+  width: 126px;
+  height: 28px;
+  border: 1px solid #fffffb;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  position: absolute;
+  top: 4px;
+  right: 8px;
+}
+
+@media (min-width: 500px) {
+
+  .component__select__btn {
+    margin: 0 auto 5rem;
+    padding: 0.9rem 0;
+  }
+  .component__select__btn::before {
+    top: 5.5px;
+    right: 7px;
+    height: 34px;
+  }
+
+}
+@media (min-width: 600px) {
+
+  .component__select__btn {
+    /* margin: 0; */
+    padding: 0.9rem 0;
+  }
+}
+/*  関連商品一覧*/
+.product__container {
+  display: flex;
+  justify-content: center;
+}
+.product__list__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin-bottom: 8rem;
+
+  width: 100%;
+  max-width: 390px;
+}
+.product__inner {
+  margin-top: 2rem;
+}
+.product__imgbox:before{
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.product__imgbox {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+.product__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  object-fit: cover;
+}
+.product__img:hover {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  opacity: 0.8;
+}
+.product__txt--contents {
+  width: auto;
+}
+.product__txt {
+  text-align: left;
+  font-size: 16px;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  width: 160px;
+}
+.product__tag {
+  font-size: 0.6rem;
+  border: #0f2350 1px solid;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 0.2rem;
+  background-color: #fff;
+  display: inline-block;
+  margin-bottom: 0.3rem;
+}
+
+@media (max-width: 366px) {
+  .product__list__wrap {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 626px) {
+  .product__list__wrap {
+   /*  gap: 2rem;  */
+    padding-left: .5rem;
+    width: 94%;
+    max-width: 565px;
+    justify-content: start;
+  }
+  .product__imgbox{
+    margin-right: 2rem;
+
+  }
+}
+@media (min-width: 1100px) {
+  .product__list__wrap {
+    width: 100%;
+    max-width: 770px;
+  /*   gap: 2rem; */
+    padding-left: 1.5rem;
+  }
+}
+/* ここまでproduct__datail  商品詳細  林  ここまで */
+
+
