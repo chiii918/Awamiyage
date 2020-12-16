@@ -1,10 +1,2 @@
-reports_id;reports_name;reports_type;reports_content1;reports_content2;reports_content3;reports_content4;reports_eyecatch;reports_photo2;reports_photo3;reports_heading1;reports_heading2;reports_heading3;products_id1;products_id2;products_id3;products_id4;products_id5;makers_id;register_time;register_person;update_time;update_person;delete_time;delete_person;reports_show
-1;レビュー単品;1;内容1;内容2;内容3;内容4;;;;小見出し1;小見出し2;小見出し3;1;2;3;4;5;1;2020-11-30 15:10:30;Admin;;;;;t
-2;レビュー複数;2;内容1;内容2;内容3;内容4;;;;小見出し1;小見出し2;小見出し3;1;2;3;4;5;1;2020-11-30 15:10:50;Admin;;;;;t
-3;お得情報1;3;内容1;内容2;内容3;内容4;;;;小見出し1;小見出し2;小見出し3;1;2;3;4;5;1;2020-11-30 15:10:30;Admin;;;;;t
-4;お得情報2;3;内容1;内容2;内容3;内容4;;;;小見出し1;小見出し2;小見出し3;1;2;3;4;5;1;2020-12-12 22:32:09.420809;Admin;;;;;t
-5;お得情報3;3;内容1;内容2;内容3;内容4;;;;小見出し1;小見出し2;小見出し3;1;2;3;4;5;1;2020-12-12 22:32:12.732215;Admin;;;;;t
-6;お得情報4;3;内容1;内容2;内容3;内容4;;;;小見出し1;小見出し2;小見出し3;1;2;3;4;5;1;2020-12-12 22:32:15.455923;Admin;;;;;t
-7;お得情報5;3;内容1;内容2;内容3;内容4;;;;小見出し1;小見出し2;小見出し3;1;2;3;4;5;1;2020-12-12 22:32:18.689355;Admin;;;;;t
-8;お得情報6;3;内容1;内容2;内容3;内容4;;;;小見出し1;小見出し2;小見出し3;1;2;3;4;5;1;2020-12-12 22:32:21.358288;Admin;;;;;t
-9;お得情報7;3;内容1;内容2;内容3;内容4;;;;小見出し1;小見出し2;小見出し3;1;2;3;4;5;1;2020-12-12 22:32:24.293116;Admin;;;;;t
+reports_id,reports_name,reports_type,reports_content1,reports_content2,reports_content3,reports_content4,reports_eyecatch,reports_photo2,reports_photo3,reports_heading1,reports_heading2,reports_heading3,products_id1,products_id2,products_id3,products_id4,products_id5,makers_id,register_time,register_person,update_time,update_person,delete_time,delete_person,reports_show
+1,「あわみやげ」オープンしました。,3,徳島県のお土産紹介サイト「あわみやげ」オープンしました。徳島のお土産って何があるの？どんなお土産が人気なの？そんな時に覗いてみてください、徳島の魅力が詰まったお土産がたくさんあります！,,,,./img/img_reports/1/1-1.jpg,,,,,,,,,,,,,,,,,,
