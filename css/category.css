@@ -869,16 +869,16 @@ li.privacy--point::before {
 
 
 .maker__info--txt{
-  background-color: #0f2350;
-  display: inline-block;
-  color: #fffffb;
-  padding: .7rem 1rem;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  margin-bottom: 2rem;
+
+  margin-bottom: 1rem;
+}
+.maker__info--txt::before{
+  content: "○ ●";
+  color: #0f2350;
+}
+.maker__info--txt::after{
+  content: "● ○";
+  color: #0f2350;
 }
 .maker__info--list{
   border-bottom: #0f2350  2px solid;
