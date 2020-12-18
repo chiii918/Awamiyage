@@ -1,0 +1,459 @@
+@charset "UTF-8";
+/* ------------------------共通css----------------------------------- */
+
+html{
+  font-size: 62.5%;
+  background-image: url('../img/background01.png');
+  color: #000;
+  font-family:serif;
+}
+a{
+  color: #0b346e;
+}
+a:hover{
+  color: #a81f22;
+}
+.header__container{
+background-color: #0b346e;
+height:100px;
+width: 250px;
+position: fixed;
+top: 0;
+left: 0;
+/* padding-bottom: 20px; */
+
+}
+
+.header__logo{
+  width: 80px;
+display: block;
+margin: 5px auto 0;
+}
+.header__link{
+width: 90%;
+margin: 10px auto 0;
+display: flex;
+text-align: center;
+}
+.header__btn{
+  color: #fff;
+  padding:  10px;
+  font-size: 1.5rem;
+}
+.header__btn--logout{
+  color: #fff;
+  font-size: 1.5rem;
+  padding:10px ;
+}
+.header__btn--logout:hover{
+  color: #a81f22;
+}
+.header__img{
+  position: absolute;
+  top: 200px;
+  animation:kame 3s infinite ;
+  -webkit-animation:kame 3s infinite backwards alternate ;
+}
+
+@keyframes kame {
+  0%{
+    transform: translateX(-200px);
+    -webkit-transform: translateX(-200px);
+    -moz-transform: translateX(-200px);
+    -ms-transform: translateX(-200px);
+    -o-transform: translateX(-200px);
+}
+100%{
+  transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+}
+}
+/* -----------------------------ログインページ------------------------------- */
+input{
+  border: 1px solid #000;
+  background-color: #fff;
+  width: 350px;
+  height: 30px;
+  padding-left: 10px;
+}
+.login__form{
+  width:350px;
+  margin: 0 auto;
+}
+.login__container {
+  width: 600px;
+  margin: 0 auto;
+
+}
+.login__wrap{
+  border: #0b346e 10px double;
+  padding: 3rem;
+}
+.system__title{
+  font-size: 4rem;
+  margin: 5rem 0;
+  text-align: center;
+  position: relative;
+}
+ .system__title::before{
+  content: "";
+  display: block;
+  width: 200px;
+  height:2px;
+  background: linear-gradient(to left, #0b346e, transparent);
+  position: absolute;
+ top: 20px;
+
+}
+.system__title::after{
+  content: "";
+  display: block;
+  width: 200px;
+  height:2px;
+  background: linear-gradient(to right, #0b346e, transparent);
+  position: absolute;
+ top: 20px;
+ right:  0px;
+}
+.system__title--sub{
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.system__txt{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+
+}
+.login__inner{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+.login__btn{
+  background-color: #0b346e;
+  color: #fff;
+  padding:1rem 3rem ;
+  font-size: 1.5rem;
+
+}
+
+/* -------------------------------------メーカー登録ページ------------------------------------- */
+table{
+  margin: 0 auto;
+  border-spacing: 0 1rem ;
+  border-collapse:separate ;
+}
+caption{
+  font-size: 3rem;
+  margin:2rem 0 2rem;
+  text-align: center;
+  position: relative;
+
+}
+
+th{
+  font-size: 1.5rem;
+  padding-right: 2rem;
+  vertical-align: middle;
+
+}
+td{
+ font-size: 1.5rem;
+}
+
+.system__inner{
+  margin-top: 3rem;
+  text-align: center;
+}
+.system__btn{
+  background-color: #0b346e;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+  border: none;
+  padding: .5rem 2rem;
+}
+.system__btn:nth-of-type(3){
+  margin-left: 6rem;
+}
+.pdf {
+  background-color: transparent;
+  border: none;
+}
+
+/* ------------------------------------- 一覧ページ---------------------- */
+.list__title{
+position: relative;
+}
+
+.list__count{
+  font-size: 2rem;
+}
+
+
+.list__table{
+  border:1px solid #0b346e;
+   border-spacing: 0;
+  border-collapse:collapse ;
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 10rem;
+}
+.list__th{
+   border:1px solid #0b346e;
+   text-align: center;
+   padding:5px 25px;
+}
+.list__th--company{
+  width: 200px;
+  border:1px solid #0b346e;
+  text-align: center;
+}
+.list__th--radio{
+  width: 150px;
+  text-align: center;
+  padding: 0;
+
+}
+.radio{
+  width: 15px;
+   position: relative;
+  top:-2px;
+  vertical-align: middle;
+}
+.list__td{
+   border:1px solid #0b346e;
+   vertical-align: middle;
+   padding: 2px;
+}
+
+/* -------------------------------------------詳細ページ----------------------- */
+
+.product__img{
+	max-width: 100%;
+}
+
+
+.detail__table{
+  border: #0b346e 1px solid;
+  width: 600px;
+  background-color: #fff;
+  border-collapse:collapse ;
+}
+.detail__th{
+  width: 200px;
+  border: #0b346e 1px solid;
+  padding: 10px 0;
+  text-align: center;
+}
+.detail__td{
+  width: 400px;
+  border: #0b346e 1px solid;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* -----------------------------マイページ------------------------------------------------- */
+.mypage__container{
+width: 60%;
+margin: 0 auto;
+}
+.back__wrap{
+	text-align: center;
+}
+.back__title{
+  position: relative;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 20px;
+  display: inline-block;
+}
+.back__title::before{
+  content: "";
+  display: block;
+  width: 150px;
+  height:2px;
+  background: linear-gradient(to right, #0b346e, transparent);
+  position: absolute;
+ top: 23px;
+ left: 220px;
+
+}
+.back__title::after{
+  content: "";
+  display: block;
+  width: 150px;
+  height:2px;
+  background: linear-gradient(to left, #0b346e, transparent);
+  position: absolute;
+ top: 23px;
+ right: 220px;
+}
+.mypage__subtitle{
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  letter-spacing: 15px;
+}
+
+.mypage__wrap{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+  height: 100px;
+  background-color: #fff;
+  border:1px solid #0b346e;
+}
+.mypage__iconwrap{
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #0b346e;
+}
+.mypage__txtwrap{
+  background-color: #fff;
+  border: 1px solid #000;
+  height: 100px;
+  width: 260px;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+}
+.mypage__inner{
+  display: flex;
+  margin-bottom: 10px;
+}
+.icon__box{
+  width: 50px;
+  height: 50px;
+  background-color: #0b346e;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 13px auto 0;
+}
+.fas{
+  color: #fff;
+  font-size: 2.5rem;
+}
+.icon__txt{
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.mypage__txt{
+  font-size: 1.6rem;
+  position: relative;
+}
+ .mypage__txt::after{
+  display: block;
+  content: "\f138";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #a81f22;
+  position: absolute;
+  top: 0;
+  left: 35px;
+  opacity: 0;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+.mypage__txt:hover::after{
+  opacity: 1;
+}
+.mypage__contents{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header__btn--mypage{
+  color: #fff;
+  font-size: 1.5rem;
+  padding:10px;
+ text-align: center;
+ margin-top: 10px;
+
+}
+.header__btn--mypage:hover{
+  color: #a81f22;
+}
+.header__link--mypage{
+  text-align: center;
+}
+
+
+/* -----------------------------試食記事登録------------------------------------------------- */
+.reports__container{
+  width: 60%;
+  margin: 7rem auto;
+}
+.reports__wrap{
+  padding: 10rem;
+}
+.reports__title{
+  font-size: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+.reports__group{
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+textarea {
+  resize: none;
+  width: 100%;
+  height: 20rem;
+  padding: 0.5rem;
+  border: #000000 1px solid;
+}
+span{
+  color: #a81f22;
+}
+input[type="file"]{
+
+  border: none;
+  outline: none;
+}
+.reports__title{
+  position: relative;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 20px;
+}
+.reports__title::before{
+  content: "";
+  display: block;
+  width: 150px;
+  height:2px;
+  background: linear-gradient(to left, #0b346e, transparent);
+  position: absolute;
+ top: 23px;
+ left:130px;
+}
+.reports__title::after{
+  content: "";
+  display: block;
+  width: 150px;
+  height:2px;
+  background: linear-gradient(to right, #0b346e, transparent);
+  position: absolute;
+ top: 23px;
+ right: 130px;
+}
