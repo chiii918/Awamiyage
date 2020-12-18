@@ -4,10 +4,11 @@
 -- https://tableplus.com/
 --
 -- Database: postgres
--- Generation Time: 2020-12-16 13:57:08.9880
+-- Generation Time: 2020-12-18 09:37:41.0850
 -- -------------------------------------------------------------
 
 
+DROP TABLE IF EXISTS "public"."makers";
 -- This script only contains the table creation statements and does not fully represent the table in the database. It's still missing: indices, triggers. Do not use it as a backup.
 
 -- Sequence and defined type
@@ -76,4 +77,5 @@ INSERT INTO "public"."makers" ("makers_id", "makers_name", "makers_address", "ma
 ('41', '株式会社　東大', '', '', 'http://ramen-todai.com/', '', '', '2020-12-14 00:00:00', 'Admin', NULL, '', NULL, NULL, 'f'),
 ('42', 'SATORU HAYAMI inc.', '徳島県鳴門市鳴門町高島字高島194', '0886-23-1525', 'https://satorun.net/', 'https://satorun.net/order/', '堂の浦 鳴門本店', '2020-12-14 00:00:00', 'Admin', NULL, '', NULL, NULL, 'f'),
 ('43', '岡本中華', '徳島県小松島市中田町奥林60-1', '0885-32-0653', 'http://www.okamoto1951.jp/', '', '', '2020-12-14 00:00:00', 'Admin', NULL, '', NULL, NULL, 'f'),
-('45', '徳島市農業協同組合', '徳島県徳島市万代町5丁目71-11', '088-622-6335', 'https://ja-tcc.or.jp/', '', 'なっとく市場', '2020-12-14 00:00:00', 'Admin', NULL, '', NULL, NULL, 't');
+('45', '徳島市農業協同組合', '徳島県徳島市万代町5丁目71-11', '088-622-6335', 'https://ja-tcc.or.jp/', '', 'なっとく市場', '2020-12-14 00:00:00', 'Admin', NULL, '', NULL, NULL, 't'),
+('46', 'テスト', '阿南市', '123-456-7891', NULL, NULL, NULL, '2020-12-16 15:08:02.638', 'testuser', '2020-12-16 15:08:11.309', 'testuser', '2020-12-16 15:08:17.121', 'testuser', 't');

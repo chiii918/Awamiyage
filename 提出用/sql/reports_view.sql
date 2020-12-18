@@ -4,10 +4,11 @@
 -- https://tableplus.com/
 --
 -- Database: postgres
--- Generation Time: 2020-12-16 14:00:13.7780
+-- Generation Time: 2020-12-18 09:38:26.7440
 -- -------------------------------------------------------------
 
 
+DROP VIEW IF EXISTS "public"."reports_view";
 CREATE VIEW "public"."reports_view" AS SELECT reports.reports_id,
     reports.reports_name,
     reports.reports_type,

@@ -4,10 +4,11 @@
 -- https://tableplus.com/
 --
 -- Database: postgres
--- Generation Time: 2020-12-16 13:56:59.6270
+-- Generation Time: 2020-12-18 09:37:28.1600
 -- -------------------------------------------------------------
 
 
+DROP TABLE IF EXISTS "public"."citys";
 -- This script only contains the table creation statements and does not fully represent the table in the database. It's still missing: indices, triggers. Do not use it as a backup.
 
 -- Sequence and defined type
